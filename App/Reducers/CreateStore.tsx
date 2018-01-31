@@ -3,6 +3,8 @@ import { applyMiddleware, compose, createStore, Reducer } from "redux";
 import sagaMiddlewareFactory, { Monitor, SagaIterator } from "redux-saga";
 import Config from "../Config/DebugConfig";
 import ScreenTracking from "./ScreenTrackingMiddleware";
+//import { composeWithDevTools } from 'remote-redux-devtools';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 // creates the store
 export default (rootReducer: Reducer<any>, rootSaga: () => SagaIterator) => {
@@ -33,8 +35,9 @@ export default (rootReducer: Reducer<any>, rootSaga: () => SagaIterator) => {
   const createAppropriateStore = Config.useReactotron ? Reactotron.createStore : createStore;
 
   const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+  //const composeEnhancers = composeWithDevTools({ realtime: true, port: 8000 });
 
-  const store = createAppropriateStore(rootReducer, composeEnhancers(...enhancers));
+  const store = createAppropriateStore(rootReducer, composeWithDevTools(...enhancers));
 
   // kick off root saga
   const sagasManager = sagaMiddleware.run(rootSaga);

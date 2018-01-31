@@ -4,6 +4,7 @@ import { Action } from "redux";
 import { SagaIterator } from "redux-saga";
 import { put, select } from "redux-saga/effects";
 import { GithubAction, GithubActions } from "../../Reducers/GithubReducers";
+import { EventActions } from "../../Reducers/EventReducers";
 import { StartupActions } from "../../Reducers/StartupReducers";
 
 // exported to make available for tests
@@ -41,5 +42,7 @@ export function * startup(action?: Action): SagaIterator {
   if (!is(String, avatar)) {
     yield put(GithubActions.userRequest({username: "ascorbic"}));
   }
+
+  yield put(EventActions.fetchEvents());
 
 }

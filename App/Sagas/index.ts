@@ -9,11 +9,13 @@ import {createAPI, GithubApi} from "../Services/GithubApi";
 
 import { GithubActions } from "../Reducers/GithubReducers";
 import { StartupActions } from "../Reducers/StartupReducers";
+import { EventActions } from "../Reducers/EventReducers";
 
 /* ------------- Sagas ------------- */
 
 import { getUserAvatar } from "./GithubSagas";
 import { startup } from "./StartupSagas";
+import { fetchEvents } from "./EventSagas";
 
 /* ------------- API ------------- */
 
@@ -30,5 +32,7 @@ export default function * root() {
 
     // some sagas receive extra parameters in addition to an action
     takeLatest(getType(GithubActions.userRequest), getUserAvatar, api),
+
+    takeLatest(getType(EventActions.fetchEvents), fetchEvents)
   ]);
 }
