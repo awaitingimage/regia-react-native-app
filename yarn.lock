@@ -6844,6 +6844,10 @@ react-native-drawer@^2.3.0:
     prop-types "^15.5.8"
     tween-functions "^1.0.1"
 
+react-native-hockeyapp@^0.5.1:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/react-native-hockeyapp/-/react-native-hockeyapp-0.5.3.tgz#34fafe0369c723a3746f077d3b25f126e9e536ee"
+
 react-native-i18n@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/react-native-i18n/-/react-native-i18n-1.0.0.tgz#0c407d9ebb846aae1aa5e05de6503008553f02fd"

@@ -52,6 +52,8 @@
 		50E8747C098A4354842BC1A7 /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A896BD5E564E57B7DC3DAB /* libyoga.a */; };
 		9F45DC9DEDB2437BBF28617A /* libcxxreact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C8F543C78BE4F32842DFD7C /* libcxxreact.a */; };
 		8561926D47894FD5A7B71F85 /* libjschelpers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA71D4B0A834BB29DF63A44 /* libjschelpers.a */; };
+		EB8E5BFCD1E44FDD8A58E111 /* libReactNativeConfig.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D09D175CC5E42C48C2DAEDC /* libReactNativeConfig.a */; };
+		CD88411A7CD94814A6FAB325 /* libRNHockeyApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C72CA3D234540948FFCA832 /* libRNHockeyApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -298,6 +300,10 @@
 		E2A896BD5E564E57B7DC3DAB /* libyoga.a */ = {isa = PBXFileReference; name = "libyoga.a"; path = "libyoga.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		2C8F543C78BE4F32842DFD7C /* libcxxreact.a */ = {isa = PBXFileReference; name = "libcxxreact.a"; path = "libcxxreact.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		BCA71D4B0A834BB29DF63A44 /* libjschelpers.a */ = {isa = PBXFileReference; name = "libjschelpers.a"; path = "libjschelpers.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		4461F1E4416346DA997DF834 /* ReactNativeConfig.xcodeproj */ = {isa = PBXFileReference; name = "ReactNativeConfig.xcodeproj"; path = "../node_modules/react-native-config/ios/ReactNativeConfig.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		4D09D175CC5E42C48C2DAEDC /* libReactNativeConfig.a */ = {isa = PBXFileReference; name = "libReactNativeConfig.a"; path = "libReactNativeConfig.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		7EB67B3FE60546F198413655 /* RNHockeyApp.xcodeproj */ = {isa = PBXFileReference; name = "RNHockeyApp.xcodeproj"; path = "../node_modules/react-native-hockeyapp/RNHockeyApp/RNHockeyApp.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		5C72CA3D234540948FFCA832 /* libRNHockeyApp.a */ = {isa = PBXFileReference; name = "libRNHockeyApp.a"; path = "libRNHockeyApp.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +338,8 @@
 				50E8747C098A4354842BC1A7 /* libyoga.a in Frameworks */,
 				9F45DC9DEDB2437BBF28617A /* libcxxreact.a in Frameworks */,
 				8561926D47894FD5A7B71F85 /* libjschelpers.a in Frameworks */,
+				EB8E5BFCD1E44FDD8A58E111 /* libReactNativeConfig.a in Frameworks */,
+				CD88411A7CD94814A6FAB325 /* libRNHockeyApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +511,8 @@
 				F0A10FC6169E4F79B0589A65 /* RNDeviceInfo.xcodeproj */,
 				97C95C6250AD4884834FA2C5 /* RNVectorIcons.xcodeproj */,
 				86D65C5E6D2E4759BE19E18D /* RNI18n.xcodeproj */,
+				4461F1E4416346DA997DF834 /* ReactNativeConfig.xcodeproj */,
+				7EB67B3FE60546F198413655 /* RNHockeyApp.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1085,12 +1095,16 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-i18n/RNI18n",
+					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
+					"$(SRCROOT)/../node_modules/react-native-hockeyapp/RNHockeyApp/RNHockeyApp",
 				);
 			};
 			name = Debug;
@@ -1117,12 +1131,16 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-i18n/RNI18n",
+					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
+					"$(SRCROOT)/../node_modules/react-native-hockeyapp/RNHockeyApp/RNHockeyApp",
 				);
 			};
 			name = Release;
@@ -1147,6 +1165,8 @@
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-i18n/RNI18n",
+					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
+					"$(SRCROOT)/../node_modules/react-native-hockeyapp/RNHockeyApp/RNHockeyApp",
 				);
 			};
 			name = Debug;
@@ -1170,6 +1190,8 @@
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-i18n/RNI18n",
+					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
+					"$(SRCROOT)/../node_modules/react-native-hockeyapp/RNHockeyApp/RNHockeyApp",
 				);
 			};
 			name = Release;
@@ -1205,12 +1227,16 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-i18n/RNI18n",
+					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
+					"$(SRCROOT)/../node_modules/react-native-hockeyapp/RNHockeyApp/RNHockeyApp",
 				);
 			};
 			name = Debug;
@@ -1246,12 +1272,16 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-device-info/RNDeviceInfo",
 					"$(SRCROOT)/../node_modules/react-native-vector-icons/RNVectorIconsManager",
 					"$(SRCROOT)/../node_modules/react-native-i18n/RNI18n",
+					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
+					"$(SRCROOT)/../node_modules/react-native-hockeyapp/RNHockeyApp/RNHockeyApp",
 				);
 			};
 			name = Release;
@@ -1282,6 +1312,8 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 			};
 			name = Debug;
@@ -1306,6 +1338,8 @@
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
