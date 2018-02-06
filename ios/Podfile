@@ -1,0 +1,4 @@
+target 'RegiaApp' do
+    use_frameworks!
+    pod "HockeySDK"
+  end
