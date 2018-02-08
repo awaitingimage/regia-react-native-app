@@ -13,6 +13,7 @@ import {
   GoogleAnalyticsSettings
 } from "react-native-google-analytics-bridge";
 import PrivateConfig from "../../Config/PrivateConfig";
+import { Event } from "../../Lib/Events" 
 
 // Styles
 import styles from "./EventsScreenStyle";
@@ -34,7 +35,7 @@ export interface DispatchProps {
  * The properties mapped from the global state
  */
 export interface StateProps {
-
+  events: Event[]
 }
 
 /**
@@ -44,7 +45,7 @@ export interface State {
 
 }
 
-type Props = StateProps & DispatchProps & OwnProps & NavigationScreenProps<{}>;
+type Props = StateProps & DispatchProps & OwnProps & NavigationScreenProps<any>;
 
 class EventsScreen extends
   React.Component<Props, State> {
@@ -53,25 +54,16 @@ class EventsScreen extends
 
   };
 
-  public static navigationOptions: NavigationDrawerScreenOptions = {
-    drawerLabel: "Welcome",
-    drawerIcon: ({ tintColor, focused }: {tintColor: string, focused: boolean}) => (
-      <Icon
-        name="home"
-        size={20}
-        style={{ color: tintColor }}
-      />
-    ),
-  };
-
   componentWillMount(){
     let tracker = new GoogleAnalyticsTracker(PrivateConfig.gaTrackingNumber);
     tracker.trackScreenView("Events");
   }
 
   public render() {
+    
     return (
       <View style={styles.mainContainer}>
+      {this.props.events.map( event => <Text>{event.title}</Text>)}
         <Text>Hello EventsScreen</Text>
       </View>
     );
@@ -83,7 +75,7 @@ const mapDispatchToProps = (dispatch: Redux.Dispatch<RootState>): DispatchProps 
 });
 
 const mapStateToProps = (state: RootState, ownProps: OwnProps): StateProps => {
-  return {};
+  return {events: state.event.events};
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(EventsScreen) as React.ComponentClass<OwnProps>;

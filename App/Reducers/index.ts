@@ -13,7 +13,7 @@ export const reducers = combineReducers({
   event: EventReducer
 });
 
-export interface State {
+export interface RootState {
   github: ImmutableGithubState;
   nav: NavigationState;
   event: EventState;
