@@ -58,3 +58,6 @@ buck-out/
 .env
 dist
 .jest
+
+#Private files
+App/Config/PrivateConfig.ts
