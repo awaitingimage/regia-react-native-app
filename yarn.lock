@@ -6844,6 +6844,10 @@ react-native-drawer@^2.3.0:
     prop-types "^15.5.8"
     tween-functions "^1.0.1"
 
+react-native-google-analytics-bridge@^5.6.0:
+  version "5.6.0"
+  resolved "https://registry.yarnpkg.com/react-native-google-analytics-bridge/-/react-native-google-analytics-bridge-5.6.0.tgz#996b8ec29ce17560f8dc89ff58beca0dcebe3fcd"
+
 react-native-hockeyapp@^0.5.1:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/react-native-hockeyapp/-/react-native-hockeyapp-0.5.3.tgz#34fafe0369c723a3746f077d3b25f126e9e536ee"

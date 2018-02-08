@@ -7,6 +7,12 @@ import * as Redux from "redux";
 import { RootState } from "../../Reducers";
 import { Images } from "../../Themes";
 import Metrics from "../../Themes/Metrics";
+import {
+  GoogleAnalyticsTracker,
+  GoogleTagManager,
+  GoogleAnalyticsSettings
+} from "react-native-google-analytics-bridge";
+import PrivateConfig from "../../Config/PrivateConfig";
 
 // Styles
 import styles from "./EventsScreenStyle";
@@ -57,6 +63,11 @@ class EventsScreen extends
       />
     ),
   };
+
+  componentWillMount(){
+    let tracker = new GoogleAnalyticsTracker(PrivateConfig.gaTrackingNumber);
+    tracker.trackScreenView("Events");
+  }
 
   public render() {
     return (
