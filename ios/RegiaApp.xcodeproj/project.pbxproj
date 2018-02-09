@@ -1590,6 +1590,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.awaitingimage.regiaapp;
 				PRODUCT_NAME = RegiaApp;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1617,6 +1618,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.awaitingimage.regiaapp;
 				PRODUCT_NAME = RegiaApp;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
