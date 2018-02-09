@@ -1,6 +1,6 @@
 {
   "name": "RegiaApp",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -21,7 +21,10 @@
     "lint": "tslint --project . -e '**/*.js' -t verbose | snazzy",
     "lintdiff": "git diff --name-only --cached --relative | grep '\\.tsx?$' | xargs tslint | snazzy",
     "fixcode": "tslint --project . -e '**/*.js' --fix",
-    "git-hook": "npm run lint -s && npm run test -s"
+    "git-hook": "npm run lint -s && npm run test -s",
+    "version:up:patch": "node ./node_modules/react-native-version-up/index.js --patch",
+    "version:up:minor": "node ./node_modules/react-native-version-up/index.js --minor",
+    "version:up:major": "node ./node_modules/react-native-version-up/index.js --major"
   },
   "dependencies": {
     "apisauce": "^0.14.0",
@@ -41,6 +44,7 @@
     "react-native-hockeyapp": "^0.5.1",
     "react-native-i18n": "1.0.0",
     "react-native-vector-icons": "4.3.0",
+    "react-native-version-up": "^1.0.7",
     "react-navigation": "1.0.0-beta.11",
     "react-redux": "^5.0.2",
     "react-redux-typescript": "^2.3.0",
