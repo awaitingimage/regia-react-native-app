@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EventDetails component renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "white",
+      "flex": 1,
+      "paddingHorizontal": 10,
+      "paddingVertical": 20,
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#2d2d2d",
+        "fontFamily": "Avenir-Book",
+        "fontSize": 14,
+        "paddingBottom": 30,
+      }
+    }
+  >
+    Sailing in Cardiff Bay
+  </Text>
+</View>
+`;

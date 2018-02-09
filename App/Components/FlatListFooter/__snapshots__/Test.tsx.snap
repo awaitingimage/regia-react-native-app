@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlatListFooter component renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "flexDirection": "column",
+      "height": 125,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    onPress={[Function]}
+    style={
+      Object {
+        "color": "#828282",
+        "fontFamily": "Avenir-Book",
+        "fontSize": 14,
+        "lineHeight": 24,
+        "textDecorationLine": "underline",
+      }
+    }
+  >
+    Return to Top
+  </Text>
+</View>
+`;

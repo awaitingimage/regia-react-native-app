@@ -18,6 +18,20 @@ const size = {
   tiny: 8.5,
 };
 
+const lineHeights = {
+  h1: 40,
+  h2: 32,
+  h3: 24,
+  h4: 24,
+  h5: 24,
+  h6: 14,
+  xlarge: 32,
+  large: 24,
+  medium: 24,
+  list: 30,
+  tiny: 18,
+};
+
 const style = {
   h1: {
     fontFamily: type.base,
@@ -57,4 +71,5 @@ export default {
   type,
   size,
   style,
+  lineHeights
 };

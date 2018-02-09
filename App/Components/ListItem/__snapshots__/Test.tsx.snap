@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem component renders correctly 1`] = `
+<View
+  accessibilityLabel="Sailing in Cardiff Bay"
+  style={
+    Array [
+      Object {
+        "borderBottomWidth": 5,
+        "marginBottom": 5,
+      },
+    ]
+  }
+>
+  <View>
+    <View>
+      <View
+        accessibilityComponentType={undefined}
+        accessibilityLabel={undefined}
+        accessibilityTraits={undefined}
+        accessible={true}
+        hasTVPreferredFocus={undefined}
+        hitSlop={undefined}
+        isTVSelectable={true}
+        nativeID={undefined}
+        onLayout={undefined}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+            },
+            undefined,
+          ]
+        }
+        testID={undefined}
+        tvParallaxProperties={undefined}
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "rgba(200,200,200, 0.35)",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+                "minHeight": 70,
+                "padding": 10,
+              },
+            ]
+          }
+        >
+          <Text
+            accessible={true}
+            allowFontScaling={true}
+            ellipsizeMode="tail"
+            style={
+              Object {
+                "color": "#3b5998",
+                "flex": 1,
+                "fontFamily": "Avenir-Book",
+                "fontSize": 20,
+              }
+            }
+          >
+            Sailing in Cardiff Bay
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "flex-end",
+                "justifyContent": "center",
+                "marginLeft": 50,
+                "marginTop": -3,
+              }
+            }
+          >
+            <Text
+              accessible={true}
+              allowFontScaling={false}
+              ellipsizeMode="tail"
+              style={
+                Array [
+                  Object {
+                    "color": undefined,
+                    "fontSize": 12,
+                  },
+                  Object {
+                    "color": "#3b5998",
+                    "fontSize": 20,
+                  },
+                  Object {
+                    "fontFamily": "Ionicons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        collapsable={undefined}
+        pointerEvents="none"
+        style={
+          Object {
+            "height": 0,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <View
+          collapsable={undefined}
+          onLayout={[Function]}
+          style={Object {}}
+        >
+          <View>
+            <Text
+              accessible={true}
+              allowFontScaling={true}
+              ellipsizeMode="tail"
+            >
+              Sailing in Cardiff Bay
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
