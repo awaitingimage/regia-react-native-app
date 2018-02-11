@@ -57,7 +57,7 @@ export default class EventList extends React.PureComponent<Props> {
           data={this.props.data}
           renderItem={this.renderRow}
           keyExtractor={this.keyExtractor}
-          initialNumToRender={3}
+          initialNumToRender={8}
           ref={(ref) => { this.flatListRef = ref; }}
           //ListHeaderComponent={this.renderHeader}
           ListFooterComponent={this.renderFooter}
