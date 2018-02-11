@@ -8,11 +8,17 @@ interface Props {
 }
 
 const EventDetails: React.SFC<Props> = ({ event }: Props) => {
-  return (
+  const national = event.nationalShow ? (<Text style={styles.body}>National</Text>) : null;
+  const type = event.type ? (<Text style={styles.body}>{event.type}</Text>) : null;
+  const startDate = event.startDate ? (<View><Text style={styles.body}>Start date:</Text><Text style={styles.body}>{event.startDate}</Text></View>) : null;
+  const endDate = event.endDate ? (<Text style={styles.body}>End date: {event.endDate}</Text>) : null;
+    return (
   <View style={styles.container}>
-    <Text style={styles.body}>{event.title}</Text>
-    <Text style={styles.body}>Start date: {event.startDate}</Text>
-    <Text style={styles.body}>Dateline: {event.dateline}</Text>
+    {national}
+    {type}
+    {startDate}
+    {endDate}
+    {/* <EventLocation event={event}/> */}
   </View>
 ); };
 

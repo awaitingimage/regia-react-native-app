@@ -3,8 +3,9 @@ import { Colors, Fonts, Metrics } from "../../Themes";
 
 export default StyleSheet.create({
   container: {
-    borderBottomWidth: Metrics.baseMargin / 2,
-    marginBottom: Metrics.baseMargin / 2,
+    borderBottomWidth: 4,
+    borderColor: Colors.darkgrey,
+    //marginBottom: Metrics.baseMargin / 2,
   },
   textWrapper: {
     flexDirection: "row",
@@ -21,12 +22,12 @@ export default StyleSheet.create({
     alignItems: "flex-end",
   },
   chevron: {
-    color: Colors.facebook,
+    color: "black",
     fontSize: 20,
   },
   boldLabel: {
     ...Fonts.style.h5,
     flex: 1,
-    color: Colors.facebook,
+    color: "black",
   },
 });
