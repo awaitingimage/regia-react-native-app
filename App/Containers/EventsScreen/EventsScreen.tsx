@@ -1,5 +1,6 @@
 import * as React from "react";
 import { connect } from "react-redux";
+import { View } from "react-native";
 import * as Redux from "redux";
 import { RootState } from "../../Reducers";
 import { Images } from "../../Themes";
@@ -10,6 +11,7 @@ import { Event } from "../../Lib/Events" ;
 import EventDetails from "../../Components/EventDetails";
 import EventList from "../EventList";
 import ListItem from "../../Components/ListItem";
+import NavBar from "../../Components/NavBar";
 
 // Styles
 import styles from "./Style";
@@ -57,10 +59,17 @@ class EventsScreen extends
 
   public render() {
     return (
-      <EventList
-        data={this.props.events}
-        contentRenderer={EventDetails}
-      />
+      <View style={styles.container}>
+        <NavBar
+            color={"black"}
+            title={"Events"}
+        />
+        <EventList
+          data={this.props.events}
+          contentRenderer={EventDetails}
+        />
+        
+      </View>
     );
   }
 }

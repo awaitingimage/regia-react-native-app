@@ -26,5 +26,37 @@ exports[`EventDetails component renders correctly 1`] = `
   >
     Sailing in Cardiff Bay
   </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#2d2d2d",
+        "fontFamily": "Avenir-Book",
+        "fontSize": 14,
+        "paddingBottom": 30,
+      }
+    }
+  >
+    Start date: 
+    2018-02-03
+  </Text>
+  <Text
+    accessible={true}
+    allowFontScaling={true}
+    ellipsizeMode="tail"
+    style={
+      Object {
+        "color": "#2d2d2d",
+        "fontFamily": "Avenir-Book",
+        "fontSize": 14,
+        "paddingBottom": 30,
+      }
+    }
+  >
+    Dateline: 
+    
+  </Text>
 </View>
 `;
