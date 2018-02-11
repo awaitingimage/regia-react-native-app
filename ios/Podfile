@@ -1,4 +1,4 @@
-target 'RegiaApp' do
+target 'RegiaAnglorum' do
     use_frameworks!
     pod "HockeySDK"
     pod 'react-native-google-analytics-bridge', :path => '../node_modules/react-native-google-analytics-bridge'

@@ -12,7 +12,7 @@
 		00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302C01ABCB91800DB3ED1 /* libRCTImage.a */; };
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
-		00E356F31AD99517003FC87E /* RegiaAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RegiaAppTests.m */; };
+		00E356F31AD99517003FC87E /* RegiaAnglorumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RegiaAnglorumTests.m */; };
 		02EC11036CE647AE9634324B /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E485C4262E124C759E1AAAE8 /* EvilIcons.ttf */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
@@ -23,7 +23,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		14CE15CE23EA9060AA907415 /* Pods_RegiaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6C6A9DF128C133BA5FEBFF /* Pods_RegiaApp.framework */; };
+		14CE15CE23EA9060AA907415 /* Pods_RegiaAnglorum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC6C6A9DF128C133BA5FEBFF /* Pods_RegiaAnglorum.framework */; };
 		1BC334F3ACE84773ADF42A4E /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BCEB56BAA4994A98949CF4CC /* Octicons.ttf */; };
 		1E6CB7A5B8D64A6A957D6715 /* libRNVectorIcons.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A52AA588DA84107846C0928 /* libRNVectorIcons.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
@@ -37,7 +37,7 @@
 		2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E941DF850E9000B6D8A /* libRCTText-tvOS.a */; };
 		2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3E991DF850E9000B6D8A /* libRCTWebSocket-tvOS.a */; };
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
-		2DCD954D1E0B4F2C00145EB5 /* RegiaAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RegiaAppTests.m */; };
+		2DCD954D1E0B4F2C00145EB5 /* RegiaAnglorumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RegiaAnglorumTests.m */; };
 		4E2111D9A81945BB912A0CB3 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50B4CC778B0643D38755D3E9 /* SimpleLineIcons.ttf */; };
 		4E4A77D96854436EBE124D46 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 739E4268F0B54E86B7CF1E70 /* Foundation.ttf */; };
 		50E8747C098A4354842BC1A7 /* libyoga.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A896BD5E564E57B7DC3DAB /* libyoga.a */; };
@@ -104,7 +104,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = RegiaApp;
+			remoteInfo = RegiaAnglorum;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -132,7 +132,7 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "RegiaApp-tvOS";
+			remoteInfo = "RegiaAnglorum-tvOS";
 		};
 		3DAD3E831DF850E9000B6D8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -381,26 +381,26 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* RegiaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegiaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* RegiaAnglorumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RegiaAnglorumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* RegiaAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegiaAppTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* RegiaAnglorumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegiaAnglorumTests.m; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* RegiaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegiaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RegiaApp/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RegiaApp/AppDelegate.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* RegiaAnglorum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegiaAnglorum.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RegiaAnglorum/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RegiaAnglorum/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RegiaApp/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RegiaApp/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RegiaApp/main.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RegiaAnglorum/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RegiaAnglorum/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RegiaAnglorum/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
-		1EAE0BFCC02F9BE646DF464D /* Pods-RegiaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegiaApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RegiaApp/Pods-RegiaApp.release.xcconfig"; sourceTree = "<group>"; };
+		1EAE0BFCC02F9BE646DF464D /* Pods-RegiaAnglorum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegiaAnglorum.release.xcconfig"; path = "Pods/Target Support Files/Pods-RegiaAnglorum/Pods-RegiaAnglorum.release.xcconfig"; sourceTree = "<group>"; };
 		2602E1E8443B4D7591884486 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		28CD9677C74D4074A8CD64A7 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		2C8F543C78BE4F32842DFD7C /* libcxxreact.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libcxxreact.a; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* RegiaApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RegiaApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* RegiaApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RegiaApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		37174D76D1118480598427C9 /* Pods-RegiaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegiaApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RegiaApp/Pods-RegiaApp.debug.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* RegiaAnglorum-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RegiaAnglorum-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* RegiaAnglorum-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RegiaAnglorum-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37174D76D1118480598427C9 /* Pods-RegiaAnglorum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RegiaAnglorum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RegiaAnglorum/Pods-RegiaAnglorum.debug.xcconfig"; sourceTree = "<group>"; };
 		4461F1E4416346DA997DF834 /* ReactNativeConfig.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeConfig.xcodeproj; path = "../node_modules/react-native-config/ios/ReactNativeConfig.xcodeproj"; sourceTree = "<group>"; };
 		4A52AA588DA84107846C0928 /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
 		4D09D175CC5E42C48C2DAEDC /* libReactNativeConfig.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libReactNativeConfig.a; sourceTree = "<group>"; };
@@ -425,7 +425,7 @@
 		BCEB56BAA4994A98949CF4CC /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		C365F2DD43D442829C01934B /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		D941DFA48053467091BFF554 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		DC6C6A9DF128C133BA5FEBFF /* Pods_RegiaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegiaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC6C6A9DF128C133BA5FEBFF /* Pods_RegiaAnglorum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RegiaAnglorum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A896BD5E564E57B7DC3DAB /* libyoga.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libyoga.a; sourceTree = "<group>"; };
 		E485C4262E124C759E1AAAE8 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		F0A10FC6169E4F79B0589A65 /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
@@ -472,7 +472,7 @@
 				8561926D47894FD5A7B71F85 /* libjschelpers.a in Frameworks */,
 				EB8E5BFCD1E44FDD8A58E111 /* libReactNativeConfig.a in Frameworks */,
 				CD88411A7CD94814A6FAB325 /* libRNHockeyApp.a in Frameworks */,
-				14CE15CE23EA9060AA907415 /* Pods_RegiaApp.framework in Frameworks */,
+				14CE15CE23EA9060AA907415 /* Pods_RegiaAnglorum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,13 +543,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00E356EF1AD99517003FC87E /* RegiaAppTests */ = {
+		00E356EF1AD99517003FC87E /* RegiaAnglorumTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* RegiaAppTests.m */,
+				00E356F21AD99517003FC87E /* RegiaAnglorumTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = RegiaAppTests;
+			path = RegiaAnglorumTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -580,7 +580,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* RegiaApp */ = {
+		13B07FAE1A68108700A75B9A /* RegiaAnglorum */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -591,7 +591,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = RegiaApp;
+			name = RegiaAnglorum;
 			sourceTree = "<group>";
 		};
 		146834001AC3E56700842450 /* Products */ = {
@@ -618,8 +618,8 @@
 		484B5C674EFB9B717B932306 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				37174D76D1118480598427C9 /* Pods-RegiaApp.debug.xcconfig */,
-				1EAE0BFCC02F9BE646DF464D /* Pods-RegiaApp.release.xcconfig */,
+				37174D76D1118480598427C9 /* Pods-RegiaAnglorum.debug.xcconfig */,
+				1EAE0BFCC02F9BE646DF464D /* Pods-RegiaAnglorum.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -760,9 +760,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* RegiaApp */,
+				13B07FAE1A68108700A75B9A /* RegiaAnglorum */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* RegiaAppTests */,
+				00E356EF1AD99517003FC87E /* RegiaAnglorumTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				6EE2A7286161413E95F614B3 /* Resources */,
 				82AE3A852023A447006E4A1B /* Recovered References */,
@@ -777,10 +777,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* RegiaApp.app */,
-				00E356EE1AD99517003FC87E /* RegiaAppTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* RegiaApp-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* RegiaApp-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* RegiaAnglorum.app */,
+				00E356EE1AD99517003FC87E /* RegiaAnglorumTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* RegiaAnglorum-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* RegiaAnglorum-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -801,7 +801,7 @@
 				823C81B82029EEE600908411 /* libz.tbd */,
 				823C81B62029EEDC00908411 /* SystemConfiguration.framework */,
 				823C81B42029EED400908411 /* CoreData.framework */,
-				DC6C6A9DF128C133BA5FEBFF /* Pods_RegiaApp.framework */,
+				DC6C6A9DF128C133BA5FEBFF /* Pods_RegiaAnglorum.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -809,9 +809,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* RegiaAppTests */ = {
+		00E356ED1AD99517003FC87E /* RegiaAnglorumTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RegiaAppTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RegiaAnglorumTests" */;
 			buildPhases = (
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
@@ -822,14 +822,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = RegiaAppTests;
-			productName = RegiaAppTests;
-			productReference = 00E356EE1AD99517003FC87E /* RegiaAppTests.xctest */;
+			name = RegiaAnglorumTests;
+			productName = RegiaAnglorumTests;
+			productReference = 00E356EE1AD99517003FC87E /* RegiaAnglorumTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* RegiaApp */ = {
+		13B07F861A680F5B00A75B9A /* RegiaAnglorum */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RegiaApp" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RegiaAnglorum" */;
 			buildPhases = (
 				84BB118B943E4CFBA24FBA69 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -843,14 +843,14 @@
 			);
 			dependencies = (
 			);
-			name = RegiaApp;
+			name = RegiaAnglorum;
 			productName = "Hello World";
-			productReference = 13B07F961A680F5B00A75B9A /* RegiaApp.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* RegiaAnglorum.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* RegiaApp-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* RegiaAnglorum-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RegiaApp-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RegiaAnglorum-tvOS" */;
 			buildPhases = (
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -861,14 +861,14 @@
 			);
 			dependencies = (
 			);
-			name = "RegiaApp-tvOS";
-			productName = "RegiaApp-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* RegiaApp-tvOS.app */;
+			name = "RegiaAnglorum-tvOS";
+			productName = "RegiaAnglorum-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* RegiaAnglorum-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* RegiaApp-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* RegiaAnglorum-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RegiaApp-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RegiaAnglorum-tvOSTests" */;
 			buildPhases = (
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
@@ -879,9 +879,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "RegiaApp-tvOSTests";
-			productName = "RegiaApp-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* RegiaApp-tvOSTests.xctest */;
+			name = "RegiaAnglorum-tvOSTests";
+			productName = "RegiaAnglorum-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* RegiaAnglorum-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -912,7 +912,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RegiaApp" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RegiaAnglorum" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -999,10 +999,10 @@
 			);
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* RegiaApp */,
-				00E356ED1AD99517003FC87E /* RegiaAppTests */,
-				2D02E47A1E0B4A5D006451C7 /* RegiaApp-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* RegiaApp-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* RegiaAnglorum */,
+				00E356ED1AD99517003FC87E /* RegiaAnglorumTests */,
+				2D02E47A1E0B4A5D006451C7 /* RegiaAnglorum-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* RegiaAnglorum-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1369,13 +1369,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RegiaAnglorum/Pods-RegiaAnglorum-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/React/React.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-google-analytics-bridge/react_native_google_analytics_bridge.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_google_analytics_bridge.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RegiaApp/Pods-RegiaApp-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RegiaAnglorum/Pods-RegiaAnglorum-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
@@ -1403,7 +1408,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RegiaApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RegiaAnglorum-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1416,7 +1421,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RegiaApp/Pods-RegiaApp-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-RegiaAnglorum/Pods-RegiaAnglorum-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/HockeySDK/HockeySDKResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -1425,7 +1430,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RegiaApp/Pods-RegiaApp-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RegiaAnglorum/Pods-RegiaAnglorum-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1435,7 +1440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* RegiaAppTests.m in Sources */,
+				00E356F31AD99517003FC87E /* RegiaAnglorumTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1461,7 +1466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* RegiaAppTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* RegiaAnglorumTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1470,12 +1475,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* RegiaApp */;
+			target = 13B07F861A680F5B00A75B9A /* RegiaAnglorum */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* RegiaApp-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* RegiaAnglorum-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1487,7 +1492,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = RegiaApp;
+			path = RegiaAnglorum;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1509,7 +1514,7 @@
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
 					"$(SRCROOT)/../node_modules/react-native-hockeyapp/RNHockeyApp/RNHockeyApp",
 				);
-				INFOPLIST_FILE = RegiaAppTests/Info.plist;
+				INFOPLIST_FILE = RegiaAnglorumTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1528,7 +1533,7 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RegiaApp.app/RegiaApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RegiaAnglorum.app/RegiaAnglorum";
 			};
 			name = Debug;
 		};
@@ -1545,7 +1550,7 @@
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
 					"$(SRCROOT)/../node_modules/react-native-hockeyapp/RNHockeyApp/RNHockeyApp",
 				);
-				INFOPLIST_FILE = RegiaAppTests/Info.plist;
+				INFOPLIST_FILE = RegiaAnglorumTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -1564,13 +1569,13 @@
 					"-lc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RegiaApp.app/RegiaApp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RegiaAnglorum.app/RegiaAnglorum";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37174D76D1118480598427C9 /* Pods-RegiaApp.debug.xcconfig */;
+			baseConfigurationReference = 37174D76D1118480598427C9 /* Pods-RegiaAnglorum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -1586,15 +1591,15 @@
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
 					"$(SRCROOT)/../node_modules/react-native-hockeyapp/RNHockeyApp/RNHockeyApp",
 				);
-				INFOPLIST_FILE = RegiaApp/Info.plist;
+				INFOPLIST_FILE = RegiaAnglorum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.awaitingimage.regiaapp;
-				PRODUCT_NAME = RegiaApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.awaitingimage.regiaanglorum;
+				PRODUCT_NAME = RegiaAnglorum;
 				PROVISIONING_PROFILE = "471e23bf-07f6-44e9-8ca7-bc1366e937df";
 				PROVISIONING_PROFILE_SPECIFIER = "Awaiting Image Hockey App";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1604,7 +1609,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EAE0BFCC02F9BE646DF464D /* Pods-RegiaApp.release.xcconfig */;
+			baseConfigurationReference = 1EAE0BFCC02F9BE646DF464D /* Pods-RegiaAnglorum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -1619,15 +1624,15 @@
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
 					"$(SRCROOT)/../node_modules/react-native-hockeyapp/RNHockeyApp/RNHockeyApp",
 				);
-				INFOPLIST_FILE = RegiaApp/Info.plist;
+				INFOPLIST_FILE = RegiaAnglorum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.awaitingimage.regiaapp;
-				PRODUCT_NAME = RegiaApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.awaitingimage.regiaanglorum;
+				PRODUCT_NAME = RegiaAnglorum;
 				PROVISIONING_PROFILE = "471e23bf-07f6-44e9-8ca7-bc1366e937df";
 				PROVISIONING_PROFILE_SPECIFIER = "Awaiting Image Hockey App";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1655,7 +1660,7 @@
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
 					"$(SRCROOT)/../node_modules/react-native-hockeyapp/RNHockeyApp/RNHockeyApp",
 				);
-				INFOPLIST_FILE = "RegiaApp-tvOS/Info.plist";
+				INFOPLIST_FILE = "RegiaAnglorum-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1672,7 +1677,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.RegiaApp-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.RegiaAnglorum-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1700,7 +1705,7 @@
 					"$(SRCROOT)/../node_modules/react-native-config/ios/ReactNativeConfig",
 					"$(SRCROOT)/../node_modules/react-native-hockeyapp/RNHockeyApp/RNHockeyApp",
 				);
-				INFOPLIST_FILE = "RegiaApp-tvOS/Info.plist";
+				INFOPLIST_FILE = "RegiaAnglorum-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1717,7 +1722,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.RegiaApp-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.RegiaAnglorum-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -1736,7 +1741,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "RegiaApp-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "RegiaAnglorum-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1749,10 +1754,10 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.RegiaApp-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.RegiaAnglorum-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RegiaApp-tvOS.app/RegiaApp-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RegiaAnglorum-tvOS.app/RegiaAnglorum-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
@@ -1768,7 +1773,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "RegiaApp-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "RegiaAnglorum-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1781,10 +1786,10 @@
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.RegiaApp-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.RegiaAnglorum-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RegiaApp-tvOS.app/RegiaApp-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RegiaAnglorum-tvOS.app/RegiaAnglorum-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -1868,7 +1873,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RegiaAppTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RegiaAnglorumTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1877,7 +1882,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RegiaApp" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RegiaAnglorum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1886,7 +1891,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RegiaApp-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RegiaAnglorum-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1895,7 +1900,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RegiaApp-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "RegiaAnglorum-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1904,7 +1909,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RegiaApp" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RegiaAnglorum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

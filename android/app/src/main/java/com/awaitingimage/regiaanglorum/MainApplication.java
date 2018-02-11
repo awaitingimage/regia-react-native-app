@@ -1,4 +1,4 @@
-package com.regiaapp;
+package com.awaitingimage.regiaanglorum;
 
 import android.app.Application;
 

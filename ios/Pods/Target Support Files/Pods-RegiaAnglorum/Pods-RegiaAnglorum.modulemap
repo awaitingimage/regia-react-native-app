@@ -1,0 +1,6 @@
+framework module Pods_RegiaAnglorum {
+  umbrella header "Pods-RegiaAnglorum-umbrella.h"
+
+  export *
+  module * { export * }
+}

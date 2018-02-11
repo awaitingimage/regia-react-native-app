@@ -1,0 +1,6 @@
+framework module react_native_google_analytics_bridge {
+  umbrella header "react-native-google-analytics-bridge-umbrella.h"
+
+  export *
+  module * { export * }
+}
