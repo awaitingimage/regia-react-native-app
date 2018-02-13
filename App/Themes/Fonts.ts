@@ -1,6 +1,6 @@
 const type = {
-  base: "Raleway-Regular",
-  bold: "Avenir-Black",
+  base: "Raleway",
+  bold: "Raleway-Bold",
   emphasis: "HelveticaNeue-Italic",
 };
 
@@ -38,7 +38,7 @@ const style = {
     fontSize: size.h1,
   },
   h2: {
-    fontWeight: "bold",
+    fontFamily: type.bold,
     fontSize: size.h2,
   },
   h3: {

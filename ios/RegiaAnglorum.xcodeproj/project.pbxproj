@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -47,6 +48,8 @@
 		823C81B72029EEDC00908411 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 823C81B62029EEDC00908411 /* SystemConfiguration.framework */; };
 		823C81B92029EEE600908411 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 823C81B82029EEE600908411 /* libz.tbd */; };
 		823C81BB2029EEF000908411 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 823C81BA2029EEF000908411 /* libsqlite3.0.tbd */; };
+		82DE9ADB2032DF8200EBCA2B /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82DE9AD92032DF8100EBCA2B /* Raleway-Bold.ttf */; };
+		82DE9ADC2032DF8200EBCA2B /* Raleway.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82DE9ADA2032DF8200EBCA2B /* Raleway.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		8561926D47894FD5A7B71F85 /* libjschelpers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA71D4B0A834BB29DF63A44 /* libjschelpers.a */; };
 		950C3E9C491848E598019ED2 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B95C6203B66E463BA96E422C /* Ionicons.ttf */; };
@@ -413,6 +416,8 @@
 		823C81B62029EEDC00908411 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		823C81B82029EEE600908411 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		823C81BA2029EEF000908411 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		82DE9AD92032DF8100EBCA2B /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Bold.ttf"; path = "../../assets/Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		82DE9ADA2032DF8200EBCA2B /* Raleway.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Raleway.ttf; path = ../../assets/Raleway.ttf; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		86D65C5E6D2E4759BE19E18D /* RNI18n.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNI18n.xcodeproj; path = "../node_modules/react-native-i18n/RNI18n.xcodeproj"; sourceTree = "<group>"; };
 		97C95C6250AD4884834FA2C5 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
@@ -721,6 +726,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		82DE9AAE2032DF5200EBCA2B /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				82DE9AD92032DF8100EBCA2B /* Raleway-Bold.ttf */,
+				82DE9ADA2032DF8200EBCA2B /* Raleway.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -758,6 +772,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				82DE9AAE2032DF5200EBCA2B /* fonts */,
 				13B07FAE1A68108700A75B9A /* RegiaAnglorum */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RegiaAnglorumTests */,
@@ -1315,8 +1330,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				82DE9ADB2032DF8200EBCA2B /* Raleway-Bold.ttf in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				67EA5E0DF64D4E16A90B6FDF /* Entypo.ttf in Resources */,
+				82DE9ADC2032DF8200EBCA2B /* Raleway.ttf in Resources */,
 				02EC11036CE647AE9634324B /* EvilIcons.ttf in Resources */,
 				6BD0214D361B4DB5919A30F9 /* FontAwesome.ttf in Resources */,
 				4E4A77D96854436EBE124D46 /* Foundation.ttf in Resources */,
