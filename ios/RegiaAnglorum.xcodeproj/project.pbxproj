@@ -50,6 +50,7 @@
 		823C81BB2029EEF000908411 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 823C81BA2029EEF000908411 /* libsqlite3.0.tbd */; };
 		82DE9ADB2032DF8200EBCA2B /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82DE9AD92032DF8100EBCA2B /* Raleway-Bold.ttf */; };
 		82DE9ADC2032DF8200EBCA2B /* Raleway.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82DE9ADA2032DF8200EBCA2B /* Raleway.ttf */; };
+		82E192A0203350C400FB9D9D /* libRNAddCalendarEvent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E1929A2033509F00FB9D9D /* libRNAddCalendarEvent.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		8561926D47894FD5A7B71F85 /* libjschelpers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA71D4B0A834BB29DF63A44 /* libjschelpers.a */; };
 		950C3E9C491848E598019ED2 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B95C6203B66E463BA96E422C /* Ionicons.ttf */; };
@@ -359,6 +360,13 @@
 			remoteGlobalIDString = 5DBEB1501B18CEA900B34395;
 			remoteInfo = RNVectorIcons;
 		};
+		82E192992033509F00FB9D9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82E192702033509F00FB9D9D /* RNAddCalendarEvent.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNAddCalendarEvent;
+		};
 		832341B41AAA6A8300B99B32 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */;
@@ -418,6 +426,7 @@
 		823C81BA2029EEF000908411 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		82DE9AD92032DF8100EBCA2B /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Bold.ttf"; path = "../../assets/Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		82DE9ADA2032DF8200EBCA2B /* Raleway.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Raleway.ttf; path = ../../assets/Raleway.ttf; sourceTree = "<group>"; };
+		82E192702033509F00FB9D9D /* RNAddCalendarEvent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNAddCalendarEvent.xcodeproj; path = "../node_modules/react-native-add-calendar-event/ios/RNAddCalendarEvent.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		86D65C5E6D2E4759BE19E18D /* RNI18n.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNI18n.xcodeproj; path = "../node_modules/react-native-i18n/RNI18n.xcodeproj"; sourceTree = "<group>"; };
 		97C95C6250AD4884834FA2C5 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
@@ -449,6 +458,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82E192A0203350C400FB9D9D /* libRNAddCalendarEvent.a in Frameworks */,
 				823C81BB2029EEF000908411 /* libsqlite3.0.tbd in Frameworks */,
 				823C81B92029EEE600908411 /* libz.tbd in Frameworks */,
 				823C81B72029EEDC00908411 /* SystemConfiguration.framework in Frameworks */,
@@ -735,9 +745,18 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		82E192712033509F00FB9D9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82E1929A2033509F00FB9D9D /* libRNAddCalendarEvent.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				82E192702033509F00FB9D9D /* RNAddCalendarEvent.xcodeproj */,
 				823C81842029EE9000908411 /* RCTGoogleAnalyticsBridge.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
@@ -992,6 +1011,10 @@
 				{
 					ProductGroup = 82AE3AAB2023A495006E4A1B /* Products */;
 					ProjectRef = 4461F1E4416346DA997DF834 /* ReactNativeConfig.xcodeproj */;
+				},
+				{
+					ProductGroup = 82E192712033509F00FB9D9D /* Products */;
+					ProjectRef = 82E192702033509F00FB9D9D /* RNAddCalendarEvent.xcodeproj */;
 				},
 				{
 					ProductGroup = 82AE3A872023A494006E4A1B /* Products */;
@@ -1299,6 +1322,13 @@
 			fileType = archive.ar;
 			path = libRNVectorIcons.a;
 			remoteRef = 82AE3ABC2023A497006E4A1B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		82E1929A2033509F00FB9D9D /* libRNAddCalendarEvent.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNAddCalendarEvent.a;
+			remoteRef = 82E192992033509F00FB9D9D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		832341B51AAA6A8300B99B32 /* libRCTText.a */ = {

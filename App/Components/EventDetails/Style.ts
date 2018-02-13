@@ -20,6 +20,9 @@ export default StyleSheet.create({
     color: Colors.primaryText,
   },
   marginBottom: {
-    paddingHorizontal: Metrics.baseMargin,
+    paddingHorizontal: Metrics.baseMargin * 2,
+  },
+  marginTop2:{
+    paddingTop: Metrics.baseMargin * 2,
   }
 });

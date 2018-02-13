@@ -25,7 +25,8 @@ const colors = {
   link: "#1a0dab",
 
   darkgrey: "#333333",
-  primaryText: "black"
+  primaryText: "black",
+  primaryOrange: "#D98310",
 };
 
 export default colors;

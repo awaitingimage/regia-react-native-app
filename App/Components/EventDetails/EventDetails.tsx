@@ -4,18 +4,33 @@ import { Event } from "../../Lib/Events";
 import styles from "./Style";
 import moment from "moment";
 import EventLocation from "../EventLocation";
+import PrimaryButton from "../PrimaryButton";
+import * as AddCalendarEvent from 'react-native-add-calendar-event';
 
 interface Props {
   event: Event;
 }
 
 const EventDetails: React.SFC<Props> = ({ event }: Props) => {
+  const address1 = event.address1 ? event.address1 + ', ' : "";
+  const address2 = event.address2 ? event.address2 + ', ' : "";
+  const postcode = event.postcode ? event.postcode + ', ' : "";
+  const country = event.country ? event.country : "";
+  const address = address1 + address2 + postcode + country;
   const national = event.nationalShow ? (<Text style={styles.body}>National</Text>) : null;
   const type = event.type ? (<Text style={styles.body}>{event.type}</Text>) : null;
   const startDate = event.startDate ? (<View style={styles.dateView}><Text style={styles.dateText}>Start date: </Text>
     <Text style={styles.body}>{moment(event.startDate).format('DD/MM/YYYY')}</Text></View>) : null;
   const endDate = event.endDate ? (<View style={styles.dateView}><Text style={styles.dateText}>End date: </Text>
     <Text style={styles.body}>{moment(event.endDate).format('DD/MM/YYYY')}</Text></View>) : null;
+  const eventConfig = {
+    title: event.title,
+    location: address,
+    notes: event.details,
+    startDate: event.startDate+"T08:00:00.000Z",
+    endDate: event.endDate+"T17:00:00.000Z",
+  };
+
   return (
     <View style={styles.container}>
       {national}
@@ -24,7 +39,26 @@ const EventDetails: React.SFC<Props> = ({ event }: Props) => {
       {startDate}
       {endDate}
       <Text style={styles.marginBottom}/>
-      <EventLocation event={event}/>
+      <EventLocation address={address}/>
+      <Text style={styles.marginTop2}/>
+      <PrimaryButton style={{alignSelf: 'flex-start'}} text={"Add to calendar"} iconString={"ios-calendar"}          
+          onPress={() =>  AddCalendarEvent.presentNewCalendarEventDialog(eventConfig)
+            .then(eventId => {
+              //handle success (receives event id) or dismissing the modal (receives false)
+              if (eventId) {
+                console.warn(eventId);
+              } else {
+                console.warn('dismissed');
+              }
+            })
+            .catch((error: string) => {
+              // handle error such as when user rejected permissions
+              console.warn(error);
+            })
+          }
+
+          
+          />
     </View>
   ); 
 };

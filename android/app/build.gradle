@@ -165,6 +165,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-add-calendar-event')
     compile project(':react-native-google-analytics-bridge')
     compile project(':react-native-hockeyapp')
     compile project(':react-native-config')
