@@ -4,6 +4,7 @@ import sagaMiddlewareFactory, { Monitor, SagaIterator } from "redux-saga";
 import Config from "../Config/DebugConfig";
 import ScreenTracking from "./ScreenTrackingMiddleware";
 import { composeWithDevTools } from 'redux-devtools-extension';
+import RehydrationServices from '../Services/RehydrationServices';
 
 // creates the store
 export default (rootReducer: Reducer<any>, rootSaga: () => SagaIterator) => {
@@ -36,6 +37,7 @@ export default (rootReducer: Reducer<any>, rootSaga: () => SagaIterator) => {
   //const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
   const store = createAppropriateStore(rootReducer, composeWithDevTools(...enhancers));
+  RehydrationServices.updateReducers(store);
 
   // kick off root saga
   const sagasManager = sagaMiddleware.run(rootSaga);

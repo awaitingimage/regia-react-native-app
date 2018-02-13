@@ -11,7 +11,7 @@ const convertToJs = (state: any) => state.asMutable({deep: true});
 const fromImmutable = R.when(isImmutable, convertToJs);
 
 // convert this JS object into an Immutable object
-const toImmutable = (raw: any) => SeamlessImmutable(raw);
+const toImmutable = (raw: any) => SeamlessImmutable.from(raw);
 
 // the transform interface that redux-persist is expecting
 export default {
