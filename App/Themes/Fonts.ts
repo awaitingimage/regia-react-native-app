@@ -65,6 +65,10 @@ const style = {
     fontFamily: type.base,
     fontSize: size.medium,
   },
+  boldDescription: {
+    fontFamily: type.bold,
+    fontSize: size.medium,
+  }
 };
 
 export default {

@@ -22,9 +22,10 @@ const colors = {
   border: "#483F53",
   banner: "#5F3E63",
   text: "#E0D7E5",
-  link: "#828282",
+  link: "#1a0dab",
 
-  darkgrey: "#333333"
+  darkgrey: "#333333",
+  primaryText: "black"
 };
 
 export default colors;
