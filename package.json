@@ -123,5 +123,10 @@
     ],
     "cacheDirectory": ".jest/cache"
   },
+  "rnpm": {
+    "assets": [
+      "./assets/fonts"
+    ]
+  },
   "config": {}
 }
