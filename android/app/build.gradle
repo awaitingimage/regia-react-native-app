@@ -118,8 +118,8 @@ android {
         applicationId "com.awaitingimage.regiaanglorum"
         minSdkVersion 16
         targetSdkVersion 22
-        versionCode 9
-        versionName "2.0.5"
+        versionCode 10
+        versionName "2.0.6"
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
