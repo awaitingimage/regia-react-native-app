@@ -18,7 +18,6 @@
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
-		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
@@ -51,6 +50,7 @@
 		82DE9ADB2032DF8200EBCA2B /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82DE9AD92032DF8100EBCA2B /* Raleway-Bold.ttf */; };
 		82DE9ADC2032DF8200EBCA2B /* Raleway.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 82DE9ADA2032DF8200EBCA2B /* Raleway.ttf */; };
 		82E192A0203350C400FB9D9D /* libRNAddCalendarEvent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 82E1929A2033509F00FB9D9D /* libRNAddCalendarEvent.a */; };
+		82E192A420346F7400FB9D9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82E192A320346F7400FB9D9D /* LaunchScreen.storyboard */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		8561926D47894FD5A7B71F85 /* libjschelpers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCA71D4B0A834BB29DF63A44 /* libjschelpers.a */; };
 		950C3E9C491848E598019ED2 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B95C6203B66E463BA96E422C /* Ionicons.ttf */; };
@@ -398,7 +398,6 @@
 		13B07F961A680F5B00A75B9A /* RegiaAnglorum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegiaAnglorum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RegiaAnglorum/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RegiaAnglorum/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RegiaAnglorum/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RegiaAnglorum/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RegiaAnglorum/main.m; sourceTree = "<group>"; };
@@ -427,6 +426,7 @@
 		82DE9AD92032DF8100EBCA2B /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Bold.ttf"; path = "../../assets/Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		82DE9ADA2032DF8200EBCA2B /* Raleway.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Raleway.ttf; path = ../../assets/Raleway.ttf; sourceTree = "<group>"; };
 		82E192702033509F00FB9D9D /* RNAddCalendarEvent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNAddCalendarEvent.xcodeproj; path = "../node_modules/react-native-add-calendar-event/ios/RNAddCalendarEvent.xcodeproj"; sourceTree = "<group>"; };
+		82E192A320346F7400FB9D9D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		86D65C5E6D2E4759BE19E18D /* RNI18n.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNI18n.xcodeproj; path = "../node_modules/react-native-i18n/RNI18n.xcodeproj"; sourceTree = "<group>"; };
 		97C95C6250AD4884834FA2C5 /* RNVectorIcons.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNVectorIcons.xcodeproj; path = "../node_modules/react-native-vector-icons/RNVectorIcons.xcodeproj"; sourceTree = "<group>"; };
@@ -601,8 +601,8 @@
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
-				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				82E192A320346F7400FB9D9D /* LaunchScreen.storyboard */,
 			);
 			name = RegiaAnglorum;
 			sourceTree = "<group>";
@@ -1361,7 +1361,6 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				82DE9ADB2032DF8200EBCA2B /* Raleway-Bold.ttf in Resources */,
-				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				67EA5E0DF64D4E16A90B6FDF /* Entypo.ttf in Resources */,
 				82DE9ADC2032DF8200EBCA2B /* Raleway.ttf in Resources */,
 				02EC11036CE647AE9634324B /* EvilIcons.ttf in Resources */,
@@ -1371,6 +1370,7 @@
 				C940BE577CD84DBEB407251B /* MaterialCommunityIcons.ttf in Resources */,
 				A89D5AA7D9084C15B7333CD4 /* MaterialIcons.ttf in Resources */,
 				1BC334F3ACE84773ADF42A4E /* Octicons.ttf in Resources */,
+				82E192A420346F7400FB9D9D /* LaunchScreen.storyboard in Resources */,
 				4E2111D9A81945BB912A0CB3 /* SimpleLineIcons.ttf in Resources */,
 				B11B5F8466C84F3080580216 /* Zocial.ttf in Resources */,
 			);
@@ -1529,18 +1529,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		13B07FB11A68108700A75B9A /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				13B07FB21A68108700A75B9A /* Base */,
-			);
-			name = LaunchScreen.xib;
-			path = RegiaAnglorum;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1636,6 +1624,7 @@
 					"$(SRCROOT)/../node_modules/react-native-hockeyapp/RNHockeyApp/RNHockeyApp",
 				);
 				INFOPLIST_FILE = RegiaAnglorum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -1669,6 +1658,7 @@
 					"$(SRCROOT)/../node_modules/react-native-hockeyapp/RNHockeyApp/RNHockeyApp",
 				);
 				INFOPLIST_FILE = RegiaAnglorum/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
