@@ -26,7 +26,9 @@ const testEvent =  {
   details: "Sailing event, liaise with Maritime Officer if interested"
 };
 
-test("EventDetails component renders correctly", () => {
+
+test.skip("EventDetails component renders correctly", () => {
+ 
   const tree = renderer.create(
   <EventDetails
     event={testEvent}
