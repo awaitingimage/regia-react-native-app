@@ -54,7 +54,7 @@ const style = {
     fontSize: size.h5,
   },
   h6: {
-    fontFamily: type.emphasis,
+    fontFamily: type.base,
     fontSize: size.h6,
   },
   normal: {

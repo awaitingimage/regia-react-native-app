@@ -19,8 +19,8 @@ exports[`FlatListFooter component renders correctly 1`] = `
     onPress={[Function]}
     style={
       Object {
-        "color": "#828282",
-        "fontFamily": "Avenir-Book",
+        "color": "#1a0dab",
+        "fontFamily": "Raleway",
         "fontSize": 14,
         "lineHeight": 24,
         "textDecorationLine": "underline",

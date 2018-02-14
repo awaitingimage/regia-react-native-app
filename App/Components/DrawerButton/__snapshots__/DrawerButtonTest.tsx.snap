@@ -33,7 +33,7 @@ exports[`AlertMessage component renders correctly 1`] = `
     style={
       Object {
         "color": "white",
-        "fontFamily": "Avenir-Book",
+        "fontFamily": "Raleway",
         "fontSize": 20,
         "marginVertical": 10,
       }

@@ -1,18 +1,18 @@
 import * as React from "react";
-import { connect } from "react-redux";
 import { View } from "react-native";
+import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
+import { connect } from "react-redux";
 import * as Redux from "redux";
+import EventDetails from "../../Components/EventDetails";
+import ListItem from "../../Components/ListItem";
+import NavBar from "../../Components/NavBar";
+import PrivateConfig from "../../Config/PrivateConfig";
+import { Event } from "../../Lib/Events" ;
 import { RootState } from "../../Reducers";
 import { Images } from "../../Themes";
 import Metrics from "../../Themes/Metrics";
-import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
-import PrivateConfig from "../../Config/PrivateConfig";
-import { Event } from "../../Lib/Events" ;
-import EventDetails from "../../Components/EventDetails";
 import EventList from "../EventList";
-import ListItem from "../../Components/ListItem";
-import NavBar from "../../Components/NavBar";
-
+import FilterTabs from "../../Components/FilterTabs";
 // Styles
 import styles from "./Style";
 
@@ -33,53 +33,65 @@ export interface DispatchProps {
  * The properties mapped from the global state
  */
 export interface StateProps {
-  events: Event[]
+  events: Event[];
 }
 
 /**
  * The local state
  */
 export interface State {
-
+  filterTag: string;
+  selectedIndex: number;
 }
 
 type Props = StateProps & DispatchProps & OwnProps;
 
-class EventsScreen extends
-  React.Component<Props, State> {
-  
-  public state = {
+class EventsScreen extends React.Component<Props, State> {
 
-  };
+  public constructor(props: Props) {
+    super(props);
+    this.state = {
+      filterTag: "All",
+      selectedIndex: 0
+    };
+  }
 
-  componentWillMount(){
-    let tracker = new GoogleAnalyticsTracker(PrivateConfig.gaTrackingNumber);
+  public componentWillMount() {
+    const tracker = new GoogleAnalyticsTracker(PrivateConfig.gaTrackingNumber);
     tracker.trackScreenView("Events");
   }
 
   public render() {
+    const events = this.props.events.filter(event => {
+      return (this.state.filterTag === "All" || event.publicPrivate.toUpperCase() === this.state.filterTag.toUpperCase() );
+    });
     return (
       <View style={styles.container}>
         <NavBar
             color={"black"}
             title={"Events"}
         />
+        <FilterTabs
+          tags={['All', 'Public', 'Private']}
+          selectedIndex={this.state.selectedIndex}
+          onChange={(key, index) => this.setState({selectedIndex: index, filterTag: key})}
+        />
         <EventList
-          data={this.props.events}
+          data={events}
           contentRenderer={EventDetails}
         />
-        
+
       </View>
     );
   }
 }
 
 const mapDispatchToProps = (dispatch: Redux.Dispatch<RootState>): DispatchProps => ({
-  
+
 });
 
 const mapStateToProps = (state: RootState, ownProps: OwnProps): StateProps => {
   return {events: state.event.events};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(EventsScreen);
+export default connect(mapStateToProps, mapDispatchToProps)(EventsScreen) as React.ComponentClass<OwnProps>;

@@ -29,7 +29,7 @@ exports[`Storyshots AlertMessage Custom Style 1`] = `
       style={
         Object {
           "color": "#CCCCCC",
-          "fontFamily": "Avenir-Book",
+          "fontFamily": "Raleway",
           "fontSize": 17,
           "fontWeight": "bold",
           "marginHorizontal": 10,
@@ -71,7 +71,7 @@ exports[`Storyshots AlertMessage Default 1`] = `
       style={
         Object {
           "color": "#CCCCCC",
-          "fontFamily": "Avenir-Book",
+          "fontFamily": "Raleway",
           "fontSize": 17,
           "fontWeight": "bold",
           "marginHorizontal": 10,
@@ -128,7 +128,7 @@ exports[`Storyshots DrawerButton Default 1`] = `
       style={
         Object {
           "color": "white",
-          "fontFamily": "Avenir-Book",
+          "fontFamily": "Raleway",
           "fontSize": 20,
           "marginVertical": 10,
         }
@@ -179,7 +179,7 @@ exports[`Storyshots FullButton Custom Style 1`] = `
     style={
       Object {
         "color": "white",
-        "fontFamily": "Avenir-Black",
+        "fontFamily": "Raleway-Bold",
         "fontSize": 14,
         "margin": 18,
         "textAlign": "center",
@@ -230,7 +230,7 @@ exports[`Storyshots FullButton Default 1`] = `
     style={
       Object {
         "color": "white",
-        "fontFamily": "Avenir-Black",
+        "fontFamily": "Raleway-Bold",
         "fontSize": 14,
         "margin": 18,
         "textAlign": "center",
