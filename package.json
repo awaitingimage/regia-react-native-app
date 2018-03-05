@@ -1,6 +1,6 @@
 {
   "name": "RegiaAnglorum",
-  "version": "2.0.6",
+  "version": "2.1.0",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -31,6 +31,7 @@
     "format-json": "^1.0.3",
     "lodash": "^4.17.2",
     "moment": "^2.20.1",
+    "npm": "^5.7.1",
     "prop-types": "15.6.0",
     "querystringify": "0.0.4",
     "ramda": "^0.24.1",
