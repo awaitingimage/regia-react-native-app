@@ -24,7 +24,7 @@ export default StyleSheet.create({
   },
   buttonIcon: {
     color: Colors.snow,
-    fontSize: Fonts.size.h5,
-    lineHeight: Fonts.size.medium,
+    fontSize: 16,
+    
   },
 });

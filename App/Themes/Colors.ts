@@ -27,6 +27,8 @@ const colors = {
   darkgrey: "#333333",
   primaryText: "black",
   primaryOrange: "#D98310",
+  primaryGrey: "#aaaaaa",
+  primaryBlue: "#328cc1"
 };
 
 export default colors;

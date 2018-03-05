@@ -41,7 +41,7 @@ const EventDetails: React.SFC<Props> = ({ event }: Props) => {
       <Text style={styles.marginBottom}/>
       <EventLocation address={address}/>
       <Text style={styles.marginTop2}/>
-      <PrimaryButton style={{alignSelf: 'flex-start'}} text={"Add to calendar"} iconString={"ios-calendar"}          
+      <PrimaryButton style={{alignSelf: 'flex-start'}} text={"Add to calendar"} iconString={"calendar"}          
           onPress={() =>  AddCalendarEvent.presentNewCalendarEventDialog(eventConfig)
             .then(eventId => {
               //handle success (receives event id) or dismissing the modal (receives false)

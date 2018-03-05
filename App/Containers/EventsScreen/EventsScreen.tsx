@@ -13,6 +13,7 @@ import { Images } from "../../Themes";
 import Metrics from "../../Themes/Metrics";
 import EventList from "../EventList";
 import FilterTabs from "../../Components/FilterTabs";
+import { NavigationScreenProps } from "react-navigation";
 // Styles
 import styles from "./Style";
 
@@ -44,7 +45,7 @@ export interface State {
   selectedIndex: number;
 }
 
-type Props = StateProps & DispatchProps & OwnProps;
+type Props = StateProps & DispatchProps & OwnProps & NavigationScreenProps<{}>;
 
 class EventsScreen extends React.Component<Props, State> {
 
@@ -68,8 +69,8 @@ class EventsScreen extends React.Component<Props, State> {
     return (
       <View style={styles.container}>
         <NavBar
-            color={"black"}
             title={"Events"}
+            onBurgerPress={() => this.props.navigation.navigate("DrawerOpen")}
         />
         <FilterTabs
           tags={['All', 'Public', 'Private']}

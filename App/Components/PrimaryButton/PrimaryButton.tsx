@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Text, TextStyle, TouchableOpacity, View } from "react-native";
-import Icon from "react-native-vector-icons/Ionicons";
+import Icon from "react-native-vector-icons/FontAwesome";
 import { ViewStyle } from "react-native-vector-icons/node_modules/@types/react-native";
 import ExamplesRegistry from "../../Services/ExamplesRegistry";
 import styles from "./Style";

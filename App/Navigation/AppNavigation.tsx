@@ -1,6 +1,9 @@
-import { StackNavigator } from "react-navigation";
+import { DrawerNavigator, StackNavigator } from "react-navigation";
 import EventsScreen from "../Containers/EventsScreen";
 import LaunchScreen from "../Containers/LaunchScreen";
+import AboutScreen from "../Containers/AboutScreen";
+import DrawerMenu from "../Components/DrawerMenu";
+import Metrics from "../Themes/Metrics";
 
 import styles from "./Styles/NavigationStyles";
 
@@ -17,4 +20,15 @@ const PrimaryNav = StackNavigator({
   },
 });
 
-export default PrimaryNav;
+const RootDrawer = DrawerNavigator({
+  EventsScreen: { screen: EventsScreen },
+  LaunchScreen: { screen: LaunchScreen },
+  AboutScreen: {screen: AboutScreen},
+}, {
+  drawerPosition: "left",
+  contentComponent: DrawerMenu,
+  drawerWidth: Metrics.screenWidth - 65,
+  initialRouteName: "EventsScreen",
+});
+
+export default RootDrawer;

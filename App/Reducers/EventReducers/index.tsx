@@ -42,10 +42,11 @@ export const successFetchingEvents: Reducer<ImmutableEventState> =
 
 export const rehydrate: Reducer<ImmutableEventState> = 
 (state: ImmutableEventState, action: AnyAction & {payload?: any}) => {
-    if (!action.payload.event.events) {
-        return failureFechingEvents(state, action);
+    console.log(action);
+    if (typeof action.payload.event != "undefined") {
+        return state.merge({ fetching: false, events: action.payload.event.events, error: false });
     }
-    return state.merge({ fetching: false, events: action.payload.event.events, error: false });
+    return failureFechingEvents(state, action);
 };
     
 

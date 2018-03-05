@@ -4,11 +4,12 @@ import { Colors, Fonts, Metrics } from "../../Themes";
 export default StyleSheet.create({
   container: {
     position: "absolute", 
-    right: Metrics.baseMargin, 
+    left: Metrics.baseMargin, 
     top: Metrics.baseMargin
   },
   icon: {
-    padding: Metrics.baseMargin,
-    fontSize: 32,
+    paddingLeft: Metrics.baseMargin,
+    paddingTop: Metrics.baseMargin / 2,
+    fontSize: 28,
   },
 });

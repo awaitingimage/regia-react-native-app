@@ -1,8 +1,8 @@
 import * as React from "react";
 import { GestureResponderEvent, StyleProp, Text, TouchableOpacity, ViewStyle } from "react-native";
-import Metrics from "../../Themes/Metrics";
-import Icon from "react-native-vector-icons/Ionicons";
+import Icon from "react-native-vector-icons/FontAwesome";
 import styles from "./Style";
+import { Colors, Metrics } from "../../Themes";
 
 interface Props {
   style?: StyleProp<ViewStyle>;
@@ -13,12 +13,12 @@ interface Props {
 const defaultProps = {
   style: styles.container,
   onPress: () => alert("menu button"),
-  color: "black",
+  color: Colors.darkgrey,
 };
 
 const BurgerButton: React.SFC<Props> = ({style, onPress, color}: Props) =>  (
   <TouchableOpacity accessibilityLabel={"menu"} onPress={onPress} style={style}>
-    <Icon name="ios-menu" style={[styles.icon, {color}]} />
+    <Icon name="bars" style={[styles.icon, {color}]} />
   </TouchableOpacity>
 );
 
