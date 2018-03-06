@@ -20,6 +20,8 @@ const images = {
   hamburger: require("../Images/Icons/hamburger.png"),
   backButton: require("../Images/Icons/back-button.png"),
   closeButton: require("../Images/Icons/close-button.png"),
+
+  aboutUs: require("../Images/boat.jpeg"),
 };
 
 export default images;

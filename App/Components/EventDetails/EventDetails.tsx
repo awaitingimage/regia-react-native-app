@@ -7,6 +7,9 @@ import EventLocation from "../EventLocation";
 import PrimaryButton from "../PrimaryButton";
 import * as AddCalendarEvent from 'react-native-add-calendar-event';
 
+const AllHtmlEntities = require('html-entities').AllHtmlEntities;
+const entities = new AllHtmlEntities();
+
 interface Props {
   event: Event;
 }
@@ -39,7 +42,7 @@ const EventDetails: React.SFC<Props> = ({ event }: Props) => {
       {startDate}
       {endDate}
       <Text style={styles.marginBottom}/>
-      <EventLocation address={address}/>
+      <EventLocation address={entities.decode(address)}/>
       <Text style={styles.marginTop2}/>
       <PrimaryButton style={{alignSelf: 'flex-start'}} text={"Add to calendar"} iconString={"calendar"}          
           onPress={() =>  AddCalendarEvent.presentNewCalendarEventDialog(eventConfig)
