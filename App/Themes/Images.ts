@@ -21,7 +21,12 @@ const images = {
   backButton: require("../Images/Icons/back-button.png"),
   closeButton: require("../Images/Icons/close-button.png"),
 
-  aboutUs: require("../Images/boat.jpeg"),
+  aboutUs: require("../Images/people.jpeg"),
+  contactUs: require("../Images/longhall.jpeg"),
+  regiaWhite: require("../Images/CrownWhite.png"),
+  regiaLogo: require("../Images/regiaLogo.gif"),
+  logoFull: require("../Images/logoFull.png"),
+  logoBlue: require("../Images/logoBlue.png"),
 };
 
 export default images;

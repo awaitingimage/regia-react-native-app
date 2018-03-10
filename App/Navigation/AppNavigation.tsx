@@ -2,6 +2,7 @@ import { DrawerNavigator, StackNavigator } from "react-navigation";
 import EventsScreen from "../Containers/EventsScreen";
 import LaunchScreen from "../Containers/LaunchScreen";
 import AboutScreen from "../Containers/AboutScreen";
+import ContactScreen from "../Containers/ContactScreen";
 import DrawerMenu from "../Components/DrawerMenu";
 import Metrics from "../Themes/Metrics";
 
@@ -24,6 +25,7 @@ const RootDrawer = DrawerNavigator({
   EventsScreen: { screen: EventsScreen },
   LaunchScreen: { screen: LaunchScreen },
   AboutScreen: {screen: AboutScreen},
+  ContactScreen: {screen: ContactScreen},
 }, {
   drawerPosition: "left",
   contentComponent: DrawerMenu,
