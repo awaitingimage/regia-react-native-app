@@ -27,6 +27,8 @@ const images = {
   regiaLogo: require("../Images/regiaLogo.gif"),
   logoFull: require("../Images/logoFull.png"),
   logoBlue: require("../Images/logoBlue.png"),
+  logoLong: require("../Images/logoLong.png"),
+  poweredBy: require("../Images/poweredBy.png"),
 };
 
 export default images;

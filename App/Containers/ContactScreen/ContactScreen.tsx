@@ -1,5 +1,5 @@
 import * as React from "react";
-import { View, ScrollView, Text, Image } from "react-native";
+import { View, ScrollView, Text, Image, Linking } from "react-native";
 import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
 import { connect } from "react-redux";
 import NavBar from "../../Components/NavBar";
@@ -51,12 +51,31 @@ class ContactScreen extends React.Component<Props, State> {
           onBurgerPress={() => this.props.navigation.navigate("DrawerOpen")}
         />
         <ScrollView contentContainerStyle={{flexGrow:1}}>
-        <Image resizeMode="contain" style={{flex: 1, width: undefined, height: undefined}} source={Images.contactUs} />
-        
 
-        <Text style={styles.text}>
-        Booking Regia Anglorum for a show, email bookingevent@regia.org or visit our Event Hire introduction page.
-        </Text>
+          <View style={{flex:.8}}>
+            <Image resizeMode="contain" style={{flex: 1, width: undefined, height: undefined}} source={Images.contactUs} />
+          </View>
+
+          <Text style={styles.text}>
+            <Text style={styles.address} onPress={()=> Linking.openURL('mailto:bookingevent@regia.org?subject=Regia booking query').catch(err => console.log(err))}>bookingevent@regia.org</Text> to book Regia for a show or media work.
+          </Text>
+          <Text style={styles.text}>
+            <Text style={styles.address} onPress={()=> Linking.openURL('mailto:publicity@regia.org?subject=Regia publicity query').catch(err => console.log(err))}>publicity@regia.org</Text> to contact our Publicity officer.
+          </Text>
+          <Text style={styles.text}>
+            <Text style={styles.address} onPress={()=> Linking.openURL('mailto:membership@regia.org?subject=Regia membership query').catch(err => console.log(err))}>membership@regia.org</Text> for queries about joining Regia.
+          </Text>
+
+          <Text style={styles.text}>
+            This app was built by <Text style={styles.address} onPress={()=> Linking.openURL('https://awaitingimage.com/').catch(err => console.log(err))}>Liam Farrell</Text>, a Regia member, as a way to contribute more to the group. The application code is open source and avalaible via the <Text style={styles.address} onPress={()=> Linking.openURL('https://github.com/awaitingimage/regia-react-native-app').catch(err => console.log(err))}>Github project</Text>.
+            Feedback in the form of Github issues are welcome as are contributions in the form of Github pull requests.
+          </Text>
+
+          <Text style={styles.text}>
+            This app uses analytics to gather feedback for future improvements.
+          </Text>
+          
+
         </ScrollView>
       </View>
     );
