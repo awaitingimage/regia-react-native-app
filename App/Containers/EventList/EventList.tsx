@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import ListItem from "../../Components/ListItem";
 import FlatListFooter from "../../Components/FlatListFooter";
 import { Event } from "../../Lib/Events";
+import PrimaryButton from "../../Components/PrimaryButton";
 
 // Styles
 import { Colors } from "../../Themes/index";
@@ -12,6 +13,7 @@ import styles from "./Style";
 interface Props {
   data: Event[];
   contentRenderer: React.SFC<{event: Event}>;
+  noDataAction: any;
 }
 
 export default class EventList extends React.PureComponent<Props> {
@@ -42,7 +44,7 @@ export default class EventList extends React.PureComponent<Props> {
 
   // Show this when data is empty
   public renderEmpty = () =>
-    <Text style={styles.label}> - No events avaliable, need to fetch from API - </Text>
+    <PrimaryButton style={{alignSelf: "center", marginTop: 20}} text={"Fetch events"} iconString={"retweet"} onPress={() =>  this.props.noDataAction()} />
 
   public renderSeparator = () =>
     <Text style={styles.label}> ----------- </Text>

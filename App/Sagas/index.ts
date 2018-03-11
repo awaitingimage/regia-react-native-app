@@ -30,9 +30,6 @@ export default function * root() {
     // some sagas only receive an action
     takeLatest(getType(StartupActions.startup), startup),
 
-    // some sagas receive extra parameters in addition to an action
-    takeLatest(getType(GithubActions.userRequest), getUserAvatar, api),
-
     takeLatest(getType(EventActions.fetchEvents), fetchEvents)
   ]);
 }

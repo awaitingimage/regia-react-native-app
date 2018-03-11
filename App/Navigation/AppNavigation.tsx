@@ -30,7 +30,7 @@ const RootDrawer = DrawerNavigator({
   drawerPosition: "left",
   contentComponent: DrawerMenu,
   drawerWidth: Metrics.screenWidth - 65,
-  initialRouteName: "ContactScreen",
+  initialRouteName: "EventsScreen",
 });
 
 export default RootDrawer;

@@ -14,6 +14,7 @@ import Metrics from "../../Themes/Metrics";
 import EventList from "../EventList";
 import FilterTabs from "../../Components/FilterTabs";
 import { NavigationScreenProps } from "react-navigation";
+import { EventActions } from "../../Reducers/EventReducers";
 // Styles
 import styles from "./Style";
 
@@ -80,6 +81,7 @@ class EventsScreen extends React.Component<Props, State> {
         <EventList
           data={events}
           contentRenderer={EventDetails}
+          noDataAction={this.props.fetchEvents}
         />
 
       </View>
@@ -88,7 +90,7 @@ class EventsScreen extends React.Component<Props, State> {
 }
 
 const mapDispatchToProps = (dispatch: Redux.Dispatch<RootState>): DispatchProps => ({
-
+  fetchEvents: () => dispatch(EventActions.fetchEvents()),
 });
 
 const mapStateToProps = (state: RootState, ownProps: OwnProps): StateProps => {
