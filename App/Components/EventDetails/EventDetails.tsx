@@ -24,7 +24,7 @@ const EventDetails: React.SFC<Props> = ({ event }: Props) => {
   const country = event.country ? event.country : "";
   const address = address1 + address2 + postcode + country;
   const national = event.nationalShow ? (<Text style={styles.body}>National</Text>) : null;
-  const type = event.type ? (<Text style={styles.body}>{event.type}</Text>) : null;
+  const type = event.type ? (<Text style={styles.body}>{entities.decode(event.type)}</Text>) : null;
   const startDate = event.startDate ? (<View style={styles.dateView}><Text style={styles.dateText}>Start date: </Text>
     <Text style={styles.body}>{moment(event.startDate).format('DD/MM/YYYY')}</Text></View>) : null;
   const endDate = event.endDate ? (<View style={styles.dateView}><Text style={styles.dateText}>End date: </Text>
