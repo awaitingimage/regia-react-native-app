@@ -8,7 +8,7 @@ import {createAPI, GithubApi} from "../Services/GithubApi";
 /* ------------- Types ------------- */
 
 import { GithubActions } from "../Reducers/GithubReducers";
-import { StartupActions } from "../Reducers/StartupReducers";
+import { StartUpActions } from "../Reducers/StartupReducers";
 import { EventActions } from "../Reducers/EventReducers";
 
 /* ------------- Sagas ------------- */
@@ -28,7 +28,7 @@ const api = DebugConfig.useFixtures ? FixtureAPI : createAPI();
 export default function * root() {
   yield all([
     // some sagas only receive an action
-    takeLatest(getType(StartupActions.startup), startup),
+    takeLatest(getType(StartUpActions.startup), startup),
 
     takeLatest(getType(EventActions.fetchEvents), fetchEvents)
   ]);

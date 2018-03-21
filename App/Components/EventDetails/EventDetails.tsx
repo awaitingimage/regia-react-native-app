@@ -6,6 +6,8 @@ import moment from "moment";
 import EventLocation from "../EventLocation";
 import PrimaryButton from "../PrimaryButton";
 import * as AddCalendarEvent from 'react-native-add-calendar-event';
+import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
+import PrivateConfig from "../../Config/PrivateConfig";
 
 const AllHtmlEntities = require('html-entities').AllHtmlEntities;
 const entities = new AllHtmlEntities();
@@ -15,6 +17,7 @@ interface Props {
 }
 
 const EventDetails: React.SFC<Props> = ({ event }: Props) => {
+  const tracker = new GoogleAnalyticsTracker(PrivateConfig.gaTrackingNumber);
   const address1 = event.address1 ? event.address1 + ', ' : "";
   const address2 = event.address2 ? event.address2 + ', ' : "";
   const postcode = event.postcode ? event.postcode + ', ' : "";
@@ -49,14 +52,14 @@ const EventDetails: React.SFC<Props> = ({ event }: Props) => {
             .then(eventId => {
               //handle success (receives event id) or dismissing the modal (receives false)
               if (eventId) {
-                console.warn(eventId);
+                tracker.trackEvent("CalendarCategory", "AddToCalendarSuccess");
               } else {
-                console.warn('dismissed');
+                tracker.trackEvent("CalendarCategory", "AddToCalendarDismissed");
               }
             })
             .catch((error: string) => {
               // handle error such as when user rejected permissions
-              console.warn(error);
+              tracker.trackEvent("CalendarCategory", "AddToCalendarFailed");
             })
           }
 

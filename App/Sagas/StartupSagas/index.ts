@@ -5,7 +5,7 @@ import { SagaIterator } from "redux-saga";
 import { put, select } from "redux-saga/effects";
 import { GithubAction, GithubActions } from "../../Reducers/GithubReducers";
 import { EventActions } from "../../Reducers/EventReducers";
-import { StartupActions } from "../../Reducers/StartupReducers";
+import { StartUpActions } from "../../Reducers/StartupReducers";
 
 // exported to make available for tests
 export const selectAvatar = (state: any) => state.github.avatar;
@@ -39,5 +39,6 @@ export function * startup(action?: Action): SagaIterator {
   }
 
   yield put(EventActions.fetchEvents());
+  yield put(StartUpActions.setTracker());
 
 }

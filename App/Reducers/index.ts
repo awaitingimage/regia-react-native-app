@@ -5,18 +5,21 @@ import configureStore from "./CreateStore";
 import { GithubReducer, ImmutableGithubState } from "./GithubReducers";
 import { NavigationReducer, NavigationState } from "./NavigationReducers";
 import { EventReducer, EventState } from "./EventReducers";
+import { StartUpReducer, StartUpState } from "./StartupReducers"
 
 /* ------------- Assemble The Reducers ------------- */
 export const reducers = combineReducers({
   nav: NavigationReducer,
   github: GithubReducer,
-  event: EventReducer
+  event: EventReducer,
+  setup: StartUpReducer
 });
 
 export interface RootState {
   github: ImmutableGithubState;
   nav: NavigationState;
   event: EventState;
+  setup: StartUpState;
 }
 
 export default () => {

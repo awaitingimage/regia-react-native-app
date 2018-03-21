@@ -40,7 +40,7 @@ class ContactScreen extends React.Component<Props, State> {
 
   public componentWillMount() {
     const tracker = new GoogleAnalyticsTracker(PrivateConfig.gaTrackingNumber);
-    tracker.trackScreenView("About");
+    tracker.trackScreenView("Contact");
   }
 
   public render() {
