@@ -4,12 +4,12 @@ import { Colors } from "../../Themes/index";
 import styles from "./Style";
 
 interface Props {
-  tags: Array<string>;
+  tags: string[];
   selectedIndex: number;
   onChange: (tag: string, index: number) => void;
 }
 
-const ListFilterTabs: React.SFC<Props> =({tags, selectedIndex, onChange}: Props) =>  {
+const ListFilterTabs: React.SFC<Props> = ({tags, selectedIndex, onChange}: Props) =>  {
   const tabs = tags.map((val, index) => (
       <TouchableOpacity
         key={val}

@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { Colors, Metrics, Fonts } from "../../Themes/";
+import { Colors, Fonts, Metrics } from "../../Themes/";
 
 export default StyleSheet.create({
   container: {
@@ -11,5 +11,5 @@ export default StyleSheet.create({
     color: Colors.primaryText,
     marginHorizontal: Metrics.baseMargin * 2,
     marginVertical: Metrics.baseMargin / 2,
-  }
+  },
 });

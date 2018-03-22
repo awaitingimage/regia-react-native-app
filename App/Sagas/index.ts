@@ -7,15 +7,15 @@ import {createAPI, GithubApi} from "../Services/GithubApi";
 
 /* ------------- Types ------------- */
 
+import { EventActions } from "../Reducers/EventReducers";
 import { GithubActions } from "../Reducers/GithubReducers";
 import { StartUpActions } from "../Reducers/StartupReducers";
-import { EventActions } from "../Reducers/EventReducers";
 
 /* ------------- Sagas ------------- */
 
+import { fetchEvents } from "./EventSagas";
 import { getUserAvatar } from "./GithubSagas";
 import { startup } from "./StartupSagas";
-import { fetchEvents } from "./EventSagas";
 
 /* ------------- API ------------- */
 
@@ -30,6 +30,6 @@ export default function * root() {
     // some sagas only receive an action
     takeLatest(getType(StartUpActions.startup), startup),
 
-    takeLatest(getType(EventActions.fetchEvents), fetchEvents)
+    takeLatest(getType(EventActions.fetchEvents), fetchEvents),
   ]);
 }

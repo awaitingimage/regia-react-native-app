@@ -5,5 +5,5 @@ import FlatListFooter from "./FlatListFooter";
 
 storiesOf("FlatListFooter", module)
   .add("Default", () => (
-    <FlatListFooter />
+    /> as FlatListFooter
   ));

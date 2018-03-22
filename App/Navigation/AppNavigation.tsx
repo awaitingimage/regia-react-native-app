@@ -1,9 +1,9 @@
 import { DrawerNavigator, StackNavigator } from "react-navigation";
-import EventsScreen from "../Containers/EventsScreen";
-import LaunchScreen from "../Containers/LaunchScreen";
+import DrawerMenu from "../Components/DrawerMenu";
 import AboutScreen from "../Containers/AboutScreen";
 import ContactScreen from "../Containers/ContactScreen";
-import DrawerMenu from "../Components/DrawerMenu";
+import EventsScreen from "../Containers/EventsScreen";
+import LaunchScreen from "../Containers/LaunchScreen";
 import Metrics from "../Themes/Metrics";
 
 import styles from "./Styles/NavigationStyles";

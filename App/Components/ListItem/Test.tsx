@@ -2,8 +2,8 @@
 import * as React from "react";
 import { Text, View } from "react-native";
 import * as renderer from "react-test-renderer";
-import { ListItem } from "./ListItem";
 import { Event } from "../../Lib/Events";
+import { ListItem } from "./ListItem";
 
 const contentRenderer: React.SFC<{event: Event}> = ({event}) => <View><Text>{event.title}</Text></View>;
 
@@ -26,9 +26,8 @@ const testEvent =  {
   country: "United Kingdom",
   website: "",
   FacebookLink: "",
-  details: "Sailing event, liaise with Maritime Officer if interested"
+  details: "Sailing event, liaise with Maritime Officer if interested",
 };
-
 
 test("ListItem component renders correctly", () => {
   const tree = renderer.create(

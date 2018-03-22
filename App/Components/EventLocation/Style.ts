@@ -18,6 +18,6 @@ export default StyleSheet.create({
     paddingRight: Metrics.baseMargin * 2,
     flexWrap: "wrap",
     color: Colors.link,
-    textDecorationLine: "underline"
-  }
+    textDecorationLine: "underline",
+  },
 });

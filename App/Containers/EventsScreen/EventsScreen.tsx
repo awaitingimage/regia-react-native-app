@@ -1,20 +1,20 @@
 import * as React from "react";
 import { View } from "react-native";
 import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
+import { NavigationScreenProps } from "react-navigation";
 import { connect } from "react-redux";
 import * as Redux from "redux";
 import EventDetails from "../../Components/EventDetails";
+import FilterTabs from "../../Components/FilterTabs";
 import ListItem from "../../Components/ListItem";
 import NavBar from "../../Components/NavBar";
 import PrivateConfig from "../../Config/PrivateConfig";
 import { Event } from "../../Lib/Events" ;
 import { RootState } from "../../Reducers";
+import { EventActions } from "../../Reducers/EventReducers";
 import { Images } from "../../Themes";
 import Metrics from "../../Themes/Metrics";
 import EventList from "../EventList";
-import FilterTabs from "../../Components/FilterTabs";
-import { NavigationScreenProps } from "react-navigation";
-import { EventActions } from "../../Reducers/EventReducers";
 // Styles
 import styles from "./Style";
 
@@ -54,7 +54,7 @@ class EventsScreen extends React.Component<Props, State> {
     super(props);
     this.state = {
       filterTag: "All",
-      selectedIndex: 0
+      selectedIndex: 0,
     };
   }
 
@@ -64,8 +64,8 @@ class EventsScreen extends React.Component<Props, State> {
   }
 
   public render() {
-    const events = this.props.events.filter(event => {
-      return (this.state.filterTag === "All" || event.publicPrivate.toUpperCase() === this.state.filterTag.toUpperCase() );
+    const events = this.props.events.filter((event) => {
+      return (this.state.filterTag === "All" || event.publicPrivate.toUpperCase() === this.state.filterTag.toUpperCase());
     });
     return (
       <View style={styles.container}>
@@ -74,7 +74,7 @@ class EventsScreen extends React.Component<Props, State> {
             onBurgerPress={() => this.props.navigation.navigate("DrawerOpen")}
         />
         <FilterTabs
-          tags={['All', 'Public', 'Private']}
+          tags={["All", "Public", "Private"]}
           selectedIndex={this.state.selectedIndex}
           onChange={(key, index) => this.setState({selectedIndex: index, filterTag: key})}
         />

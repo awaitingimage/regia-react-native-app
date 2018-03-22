@@ -1,12 +1,12 @@
 import * as React from "react";
-import { Text, TouchableOpacity, View, Image, Linking } from "react-native";
+import { Image, Linking, Text, TouchableOpacity, View } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import { NavigationActions, NavigationDrawerScreenOptions, NavigationScreenProps, NavigationState } from "react-navigation";
 import { connect } from "react-redux";
 import { navigateToScreen, resetAction } from "../../Lib/NavigationHelper";
+import { Images } from "../../Themes";
 import { Colors } from "../../Themes/";
 import styles from "./Style";
-import { Images } from "../../Themes";
 
 export interface OwnProps {
 
@@ -39,7 +39,7 @@ React.Component<StateProps & DispatchProps & OwnProps & NavigationScreenProps<{}
         <Image resizeMode="contain" style={{flex: .2, width: undefined, height: undefined, marginBottom: 10}} source={Images.regiaLogo} />
 
         <View style={styles.section} />
-        <View style={{flex:1}}>
+        <View style={{flex: 1}}>
 
         <TouchableOpacity
           onPress={this.navigateToScreen("EventsScreen")}
@@ -65,16 +65,14 @@ React.Component<StateProps & DispatchProps & OwnProps & NavigationScreenProps<{}
           <Text style={styles.linkText}>Contact us</Text>
         </TouchableOpacity>
 
-
         </View>
 
         <TouchableOpacity
-          onPress={()=> Linking.openURL('https://awaitingimage.com/').catch(err => console.log(err))}
-          style={{flex:.12}}
+          onPress={() => Linking.openURL("https://awaitingimage.com/").catch((err) => console.log(err))}
+          style={{flex: .12}}
         >
-        <Image resizeMode="contain" style={{flex: 1, width: undefined, height: undefined, marginBottom: 10}} source={Images.poweredBy} />        
+        <Image resizeMode="contain" style={{flex: 1, width: undefined, height: undefined, marginBottom: 10}} source={Images.poweredBy} />
         </TouchableOpacity>
-
 
       </View>
     );

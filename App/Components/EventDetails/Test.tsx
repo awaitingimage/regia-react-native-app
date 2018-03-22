@@ -23,12 +23,11 @@ const testEvent =  {
   country: "United Kingdom",
   website: "",
   FacebookLink: "",
-  details: "Sailing event, liaise with Maritime Officer if interested"
+  details: "Sailing event, liaise with Maritime Officer if interested",
 };
 
-
 test.skip("EventDetails component renders correctly", () => {
- 
+
   const tree = renderer.create(
   <EventDetails
     event={testEvent}

@@ -4,8 +4,8 @@ import { NavigationAction, NavigationActions,
     NavigationScreenProp,
     NavigationScreenProps,
     NavigationState} from "react-navigation";
-  
-  export const navigateToScreen = (
+
+export const navigateToScreen = (
     route: string,
     navigation: NavigationScreenProp<NavigationRoute<any>, NavigationAction>,
   ) => {
@@ -14,8 +14,8 @@ import { NavigationAction, NavigationActions,
     });
     navigation.dispatch(navigateAction);
   };
-  
-  export const resetAction = (
+
+export const resetAction = (
     routeName: string,
     navigation: NavigationScreenProp<NavigationRoute<any>, NavigationAction>,
   ) => {
@@ -28,4 +28,3 @@ import { NavigationAction, NavigationActions,
     });
     navigation.dispatch(navigateAction);
   };
-  

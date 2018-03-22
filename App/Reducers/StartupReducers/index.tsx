@@ -1,39 +1,38 @@
+import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
 import { Action, AnyAction, Reducer } from "redux";
 import * as SI from "seamless-immutable";
 import { createAction, PayloadAction } from "ts-redux-actions";
-import { mapReducers, ReducerMap } from "../../Lib/ReduxHelpers";
-import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
 import PrivateConfig from "../../Config/PrivateConfig";
+import { mapReducers, ReducerMap } from "../../Lib/ReduxHelpers";
 
 /* ------------- Types and Action Creators ------------- */
 
 const actions = {
   startup: createAction("startup"),
-  setTracker: createAction("setTracker")
+  setTracker: createAction("setTracker"),
 };
 
 export const StartUpActions = actions;
 
 export interface StartUpState {
-  gaTracker: GoogleAnalyticsTracker
+  gaTracker: GoogleAnalyticsTracker;
 }
 
 export type ImmutableStartUpState = SI.ImmutableObject<StartUpState>;
 
 export const INITIAL_STATE: ImmutableStartUpState = SI.from({
-  gaTracker: null
-})
+  gaTracker: null,
+});
 
-export const setTracker: Reducer<ImmutableStartUpState> = 
+export const setTracker: Reducer<ImmutableStartUpState> =
   (state: ImmutableStartUpState) => state.merge({ gaTracker:  new GoogleAnalyticsTracker(PrivateConfig.gaTrackingNumber) });
 
-export const startup: Reducer<ImmutableStartUpState> = 
+export const startup: Reducer<ImmutableStartUpState> =
   (state: ImmutableStartUpState) => state;
-
 
 const reducerMap: ReducerMap<typeof actions, ImmutableStartUpState> = {
   startup,
-  setTracker
+  setTracker,
 };
 
 export const StartUpReducer = mapReducers(INITIAL_STATE, reducerMap, actions);

@@ -3,8 +3,8 @@ import Reactotron from "reactotron-react-native";
 import { Action } from "redux";
 import { SagaIterator } from "redux-saga";
 import { put, select } from "redux-saga/effects";
-import { GithubAction, GithubActions } from "../../Reducers/GithubReducers";
 import { EventActions } from "../../Reducers/EventReducers";
+import { GithubAction, GithubActions } from "../../Reducers/GithubReducers";
 import { StartUpActions } from "../../Reducers/StartupReducers";
 
 // exported to make available for tests

@@ -68,12 +68,12 @@ const style = {
   boldDescription: {
     fontFamily: type.bold,
     fontSize: size.medium,
-  }
+  },
 };
 
 export default {
   type,
   size,
   style,
-  lineHeights
+  lineHeights,
 };

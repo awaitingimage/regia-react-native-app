@@ -5,5 +5,5 @@ import EventDetails from "./EventDetails";
 
 storiesOf("EventDetails", module)
   .add("Default", () => (
-    <EventDetails />
+    /> as EventDetails
   ));

@@ -5,8 +5,8 @@ import NavBar from "./NavBar";
 
 storiesOf("NavBar", module)
   .add("Default", () => (
-    <NavBar onButtonPress={() => {alert("main buttn press"); title={"title"} }}/>
+    <NavBar onButtonPress={() => {alert("main buttn press"); title = {title}; }}/>
   ))
   .add("Black", () => (
-    <NavBar color="black" onButtonPress={() => {alert("main buttn press"); title={"title"} }}/>
+    <NavBar color="black" onButtonPress={() => {alert("main buttn press"); title = {title}; }}/>
   ));

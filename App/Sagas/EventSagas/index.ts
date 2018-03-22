@@ -1,11 +1,9 @@
 import { Action, AnyAction } from "redux";
 import { buffers, END, eventChannel, SagaIterator } from "redux-saga";
-import { Events, Event } from "../../Lib/Events";
 import { call, put, take } from "redux-saga/effects";
+import { Event, Events } from "../../Lib/Events";
 import { EventActions } from "../../Reducers/EventReducers";
-import { getLocalData, fetchEventsAPI } from "../../Services/RegiaApi";
-
-
+import { fetchEventsAPI, getLocalData } from "../../Services/RegiaApi";
 
 export function* fetchEvents(action: AnyAction): SagaIterator {
     let data: Events | undefined;

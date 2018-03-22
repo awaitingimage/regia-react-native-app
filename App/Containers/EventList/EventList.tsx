@@ -1,10 +1,10 @@
 import * as React from "react";
 import { FlatList, Text, View } from "react-native";
 import { connect } from "react-redux";
-import ListItem from "../../Components/ListItem";
 import FlatListFooter from "../../Components/FlatListFooter";
-import { Event } from "../../Lib/Events";
+import ListItem from "../../Components/ListItem";
 import PrimaryButton from "../../Components/PrimaryButton";
+import { Event } from "../../Lib/Events";
 
 // Styles
 import { Colors } from "../../Themes/index";

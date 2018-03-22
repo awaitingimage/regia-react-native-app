@@ -21,9 +21,9 @@ export default StyleSheet.create({
   },
   text: {
     ...Fonts.style.h6,
-    color: Colors.primaryText
+    color: Colors.primaryText,
   },
   selectedText: {
-    color: Colors.primaryOrange
+    color: Colors.primaryOrange,
   },
 });

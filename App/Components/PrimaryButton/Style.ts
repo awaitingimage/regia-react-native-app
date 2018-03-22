@@ -25,6 +25,6 @@ export default StyleSheet.create({
   buttonIcon: {
     color: Colors.snow,
     fontSize: 16,
-    
+
   },
 });

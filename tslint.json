@@ -8,6 +8,6 @@
         "no-object-literal-type-assertion": false,
         "no-empty-interface": false,
         "no-submodule-imports": false,
-        "jsx-no-lambda": false,
+        "jsx-no-lambda": false
     }
 }

@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { Colors, Metrics, Fonts } from "../../Themes/";
+import { Colors, Fonts, Metrics } from "../../Themes/";
 
 export default StyleSheet.create({
   container: {
@@ -17,6 +17,6 @@ export default StyleSheet.create({
     paddingRight: Metrics.baseMargin * 2,
     flexWrap: "wrap",
     color: Colors.link,
-    textDecorationLine: "underline"
-  }
+    textDecorationLine: "underline",
+  },
 });

@@ -2,17 +2,17 @@
 import { combineReducers } from "redux";
 import root from "../Sagas";
 import configureStore from "./CreateStore";
+import { EventReducer, EventState } from "./EventReducers";
 import { GithubReducer, ImmutableGithubState } from "./GithubReducers";
 import { NavigationReducer, NavigationState } from "./NavigationReducers";
-import { EventReducer, EventState } from "./EventReducers";
-import { StartUpReducer, StartUpState } from "./StartupReducers"
+import { StartUpReducer, StartUpState } from "./StartupReducers";
 
 /* ------------- Assemble The Reducers ------------- */
 export const reducers = combineReducers({
   nav: NavigationReducer,
   github: GithubReducer,
   event: EventReducer,
-  setup: StartUpReducer
+  setup: StartUpReducer,
 });
 
 export interface RootState {

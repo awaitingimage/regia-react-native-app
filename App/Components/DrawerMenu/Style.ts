@@ -27,5 +27,5 @@ export default StyleSheet.create({
     borderBottomColor: Colors.primaryGrey,
     borderBottomWidth: 1,
     marginBottom: Metrics.baseMargin * 3,
-  }
+  },
 });

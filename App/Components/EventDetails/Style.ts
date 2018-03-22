@@ -12,17 +12,17 @@ export default StyleSheet.create({
     ...Fonts.style.description,
     color: Colors.primaryText,
   },
-  dateView:{
-    flexDirection: "row"
+  dateView: {
+    flexDirection: "row",
   },
-  dateText:{
+  dateText: {
     ...Fonts.style.boldDescription,
     color: Colors.primaryText,
   },
   marginBottom: {
     paddingHorizontal: Metrics.baseMargin * 2,
   },
-  marginTop2:{
+  marginTop2: {
     paddingTop: Metrics.baseMargin * 2,
-  }
+  },
 });

@@ -6,9 +6,9 @@ import { ApplicationStyles } from "../Themes";
 const globalComponentExamplesRegistry = [];
 const globalPluginExamplesRegistry = [];
 
-export const addComponentExample = (title, usage = () => {}) => { if (DebugConfig.includeExamples) globalComponentExamplesRegistry.push({title, usage}); }; // eslint-disable-line
+export const addComponentExample = (title, usage = () => {}) => { if (DebugConfig.includeExamples) { globalComponentExamplesRegistry.push({title, usage}); } }; // eslint-disable-line
 
-export const addPluginExample = (title, usage = () => {}) => { if (DebugConfig.includeExamples) globalPluginExamplesRegistry.push({title, usage}); }; // eslint-disable-line
+export const addPluginExample = (title, usage = () => {}) => { if (DebugConfig.includeExamples) { globalPluginExamplesRegistry.push({title, usage}); } }; // eslint-disable-line
 
 const renderComponentExample = (example) => {
   return (

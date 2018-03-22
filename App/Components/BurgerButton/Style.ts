@@ -3,9 +3,9 @@ import { Colors, Fonts, Metrics } from "../../Themes";
 
 export default StyleSheet.create({
   container: {
-    position: "absolute", 
-    left: Metrics.baseMargin, 
-    top: Metrics.baseMargin
+    position: "absolute",
+    left: Metrics.baseMargin,
+    top: Metrics.baseMargin,
   },
   icon: {
     paddingLeft: Metrics.baseMargin,

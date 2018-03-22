@@ -1,8 +1,8 @@
 import * as React from "react";
 import { GestureResponderEvent, StyleProp, Text, TouchableOpacity, ViewStyle } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
-import styles from "./Style";
 import { Colors, Metrics } from "../../Themes";
+import styles from "./Style";
 
 interface Props {
   style?: StyleProp<ViewStyle>;

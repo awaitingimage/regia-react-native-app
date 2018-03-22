@@ -1,10 +1,10 @@
 import Reactotron from "reactotron-react-native";
 import { applyMiddleware, compose, createStore, Reducer } from "redux";
+import { composeWithDevTools } from "redux-devtools-extension";
 import sagaMiddlewareFactory, { Monitor, SagaIterator } from "redux-saga";
 import Config from "../Config/DebugConfig";
+import RehydrationServices from "../Services/RehydrationServices";
 import ScreenTracking from "./ScreenTrackingMiddleware";
-import { composeWithDevTools } from 'redux-devtools-extension';
-import RehydrationServices from '../Services/RehydrationServices';
 
 // creates the store
 export default (rootReducer: Reducer<any>, rootSaga: () => SagaIterator) => {

@@ -1,11 +1,11 @@
 import * as React from "react";
 import { Platform, StatusBar, View } from "react-native";
+import HockeyApp from "react-native-hockeyapp";
 import { connect } from "react-redux";
+import PrivateConfig from "../../Config/PrivateConfig";
 import ReduxPersist from "../../Config/ReduxPersist";
 import ReduxNavigation from "../../Navigation/ReduxNavigation";
 import { StartupActions } from "../../Reducers/StartupReducers";
-import HockeyApp from "react-native-hockeyapp";
-import PrivateConfig from "../../Config/PrivateConfig";
 
 // Styles
 import styles from "./RootContainerStyles";
@@ -32,7 +32,7 @@ export class RootContainer extends React.Component<Props, State> {
       HockeyApp.start();
       HockeyApp.checkForUpdate();
     // if redux persist is not active fire startup action
-    if (!ReduxPersist.active) {
+      if (!ReduxPersist.active) {
       this.props.startup();
     }
   }
