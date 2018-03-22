@@ -20,9 +20,9 @@ exports[`BurgerButton component renders correctly 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     Object {
+      "left": 10,
       "opacity": 1,
       "position": "absolute",
-      "right": 10,
       "top": 10,
     }
   }
@@ -41,22 +41,23 @@ exports[`BurgerButton component renders correctly 1`] = `
         },
         Array [
           Object {
-            "fontSize": 32,
-            "padding": 10,
+            "fontSize": 28,
+            "paddingLeft": 10,
+            "paddingTop": 5,
           },
           Object {
-            "color": "black",
+            "color": "#333333",
           },
         ],
         Object {
-          "fontFamily": "Ionicons",
+          "fontFamily": "FontAwesome",
           "fontStyle": "normal",
           "fontWeight": "normal",
         },
       ]
     }
   >
-    
+    
   </Text>
 </View>
 `;

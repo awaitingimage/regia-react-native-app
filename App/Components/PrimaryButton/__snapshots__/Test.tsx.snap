@@ -68,18 +68,17 @@ exports[`PrimaryButton component renders correctly 1`] = `
           },
           Object {
             "color": "white",
-            "fontSize": 20,
-            "lineHeight": 14,
+            "fontSize": 16,
           },
           Object {
-            "fontFamily": "Ionicons",
+            "fontFamily": "FontAwesome",
             "fontStyle": "normal",
             "fontWeight": "normal",
           },
         ]
       }
     >
-      
+      ?
     </Text>
   </View>
 </View>
