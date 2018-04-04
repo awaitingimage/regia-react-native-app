@@ -12,4 +12,17 @@ export default StyleSheet.create({
     marginHorizontal: Metrics.baseMargin * 2,
     marginVertical: Metrics.baseMargin / 2,
   },
+  sectionTitle: {
+    ...Fonts.style.h4,
+    color: Colors.primaryText,
+    marginHorizontal: Metrics.baseMargin * 2,
+    marginVertical: Metrics.baseMargin / 2,
+  },
+  address: {
+    flexDirection: "row",
+    paddingRight: Metrics.baseMargin * 2,
+    flexWrap: "wrap",
+    color: Colors.link,
+    textDecorationLine: "underline",
+  },
 });
