@@ -5,6 +5,11 @@ export function getLocalData() {
     return dummyData;
 }
 
+export function getLocalColorData() {
+    const dummyData = require("../Fixtures/colors.json");
+    return dummyData;
+}
+
 export async function fetchEventsAPI() {
     const api = create({
         baseURL: "http://api.regia.org",

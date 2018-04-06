@@ -1,0 +1,36 @@
+
+
+{
+    "colors": [
+        {
+            "colourSection": "Yellow",
+            "appletonColourCode": "Bright Yellow 3/4",
+            "naturalDye": "Weld",
+            "mordent": "Alum",
+            "Yarn": "White wool",
+            "colourProduced": "Strong",
+            "regiaCode": "R001",
+            "hexCode": "#f8ed00"
+        },
+        {
+            "colourSection": "Yellow",
+            "appletonColourCode": "Heraldic Gold 4",
+            "naturalDye": "Weld",
+            "mordent": "Alum",
+            "Yarn": "White wool",
+            "colourProduced": "Dark",
+            "regiaCode": "R002",
+            "hexCode": "#f8edff"
+        },
+        {
+            "colourSection": "Yellow",
+            "appletonColourCode": "Bright Yellow 3/4",
+            "naturalDye": "Weld",
+            "mordent": "Alum",
+            "Yarn": "White wool",
+            "colourProduced": "Strong",
+            "regiaCode": "R001",
+            "hexCode": "#f8ed00"
+        }
+    ]
+}

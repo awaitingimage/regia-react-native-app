@@ -7,12 +7,14 @@ import {createAPI, GithubApi} from "../Services/GithubApi";
 
 /* ------------- Types ------------- */
 
+import { ColorActions } from "../Reducers/ColorReducers";
 import { EventActions } from "../Reducers/EventReducers";
 import { GithubActions } from "../Reducers/GithubReducers";
 import { StartUpActions } from "../Reducers/StartupReducers";
 
 /* ------------- Sagas ------------- */
 
+import { fetchColors } from "./ColorSagas";
 import { fetchEvents } from "./EventSagas";
 import { getUserAvatar } from "./GithubSagas";
 import { startup } from "./StartupSagas";
@@ -31,5 +33,6 @@ export default function * root() {
     takeLatest(getType(StartUpActions.startup), startup),
 
     takeLatest(getType(EventActions.fetchEvents), fetchEvents),
+    takeLatest(getType(ColorActions.fetchColors), fetchColors),
   ]);
 }

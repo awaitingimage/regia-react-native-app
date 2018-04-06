@@ -10,6 +10,7 @@ export function* fetchEvents(action: AnyAction): SagaIterator {
     try {
         data = yield call(fetchEventsAPI);
     } catch (err) {
+        // tslint:disable-next-line
         console.warn(err);
     }
     if (data) {

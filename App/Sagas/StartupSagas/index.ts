@@ -3,6 +3,7 @@ import Reactotron from "reactotron-react-native";
 import { Action } from "redux";
 import { SagaIterator } from "redux-saga";
 import { put, select } from "redux-saga/effects";
+import { ColorActions } from "../../Reducers/ColorReducers";
 import { EventActions } from "../../Reducers/EventReducers";
 import { GithubAction, GithubActions } from "../../Reducers/GithubReducers";
 import { StartUpActions } from "../../Reducers/StartupReducers";
@@ -39,6 +40,7 @@ export function * startup(action?: Action): SagaIterator {
   }
 
   yield put(EventActions.fetchEvents());
+  yield put(ColorActions.fetchColors());
   yield put(StartUpActions.setTracker());
 
 }

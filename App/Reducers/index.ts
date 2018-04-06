@@ -1,6 +1,7 @@
 /// <reference types="@types/webpack-env" />
 import { combineReducers } from "redux";
 import root from "../Sagas";
+import { ColorReducer, ColorState } from "./ColorReducers";
 import configureStore from "./CreateStore";
 import { EventReducer, EventState } from "./EventReducers";
 import { GithubReducer, ImmutableGithubState } from "./GithubReducers";
@@ -13,6 +14,7 @@ export const reducers = combineReducers({
   github: GithubReducer,
   event: EventReducer,
   setup: StartUpReducer,
+  color: ColorReducer,
 });
 
 export interface RootState {
@@ -20,6 +22,7 @@ export interface RootState {
   nav: NavigationState;
   event: EventState;
   setup: StartUpState;
+  color: ColorState;
 }
 
 export default () => {
