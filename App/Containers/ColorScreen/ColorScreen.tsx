@@ -5,18 +5,22 @@ import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
 import { NavigationScreenProps } from "react-navigation";
 import { connect } from "react-redux";
 import Checkbox from "../../Components/Checkbox";
+import ColorDetails from "../../Components/ColorDetails";
 import NavBar from "../../Components/NavBar";
 import PrivateConfig from "../../Config/PrivateConfig";
+import { Color } from "../../Lib/Colors";
 import { RootState } from "../../Reducers";
 import { StartUpActions } from "../../Reducers/StartupReducers";
 import { Images } from "../../Themes";
 import Metrics from "../../Themes/Metrics";
+import ColorList from "../ColorList";
 import styles from "./Style";
 
 /**
  * The properties passed to the component
  */
 export interface OwnProps {
+  navigation: NavigationScreenProps<{}>;
 }
 /**
  * The properties mapped from Redux dispatch
@@ -28,6 +32,7 @@ export interface DispatchProps {
  * The properties mapped from the global state
  */
 export interface StateProps {
+  colors: Color[];
 }
 
 /**
@@ -36,7 +41,7 @@ export interface StateProps {
 export interface State {
 }
 
-type Props = StateProps & DispatchProps & OwnProps & NavigationScreenProps<{}>;
+type Props = StateProps & DispatchProps & OwnProps;
 
 class ColorScreen extends React.Component<Props, State> {
 
@@ -52,7 +57,10 @@ class ColorScreen extends React.Component<Props, State> {
           title={"Colours"}
           onBurgerPress={() => this.props.navigation.navigate("DrawerOpen")}
         />
-          <Text>asdasd</Text>
+          <ColorList
+            data={this.props.colors}
+            contentRenderer={ColorDetails}
+          />
       </View>
     );
   }
@@ -62,6 +70,7 @@ const mapDispatchToProps = (dispatch: any): DispatchProps => ({
 });
 
 const mapStateToProps = (state: RootState, ownProps: OwnProps): StateProps => ({
+  colors: state.color.Colors,
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(ColorScreen) as React.ComponentClass<Props>;
+export default connect(mapStateToProps, mapDispatchToProps)(ColorScreen) as React.ComponentClass<OwnProps>;
