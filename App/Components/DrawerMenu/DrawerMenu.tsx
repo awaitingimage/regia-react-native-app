@@ -50,6 +50,14 @@ React.Component<StateProps & DispatchProps & OwnProps & NavigationScreenProps<{}
         </TouchableOpacity>
 
         <TouchableOpacity
+          onPress={this.navigateToScreen("ColorScreen")}
+          style={styles.linkContainer}
+        >
+          <Icon name="flask" style={styles.iconStyle} />
+          <Text style={styles.linkText}>Colours</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
           onPress={this.navigateToScreen("AboutScreen")}
           style={styles.linkContainer}
         >

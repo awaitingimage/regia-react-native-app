@@ -55,13 +55,26 @@ class AboutScreen extends React.Component<Props, State> {
           onBurgerPress={() => this.props.navigation.navigate("DrawerOpen")}
         />
         <ScrollView contentContainerStyle={{flexGrow: 1}}>
-          <Image resizeMode="contain" style={{width: Metrics.screenWidth, height: Metrics.screenWidth / 1.5}} source={Images.aboutUs} />
+          <Image
+            resizeMode="contain"
+            style={{width: Metrics.screenWidth, height: Metrics.screenWidth / 1.5}}
+            source={Images.aboutUs}
+          />
         <View style={{flex: 1}}>
           <Text style={styles.text}>
-            Regia Anglorum (an ancient term meaning Kingdoms of the English) was founded {moment("19870101", "YYYYMMDD").fromNow()} and is one of the world’s largest medieval living history and re-enactment societies.  It focuses on both military and civilian life in Great Britain between AD 900 and 1100. Regia Anglorum is an international society and although it is centred in Britain, it has members from all over, including North America, South Africa, Scandinavia and Eastern Europe.
+            Regia Anglorum (an ancient term meaning Kingdoms of the English)
+            was founded {moment("19870101", "YYYYMMDD").fromNow()} and is one
+            of the world’s largest medieval living history and re-enactment societies.
+            It focuses on both military and civilian life in Great Britain between AD 900 and 1100.
+            Regia Anglorum is an international society and although it is centred in Britain,
+            it has members from all over, including North America, South Africa, Scandinavia and Eastern Europe.
           </Text>
           <Text style={styles.text}>
-            Recreating long forgotten battles is part of many public performances, but it is only one part of the society’s activities.  Many members are exploring traditional crafts such as woodcarving, embroidery, leatherwork and other non-military activities which formed part of life during the Dark Ages, and which are exhibited in numerous shows throughout the year.
+            Recreating long forgotten battles is part of many public performances,
+            but it is only one part of the society’s activities.  Many members are
+            exploring traditional crafts such as woodcarving, embroidery,
+            leatherwork and other non-military activities which formed part of
+            life during the Dark Ages, and which are exhibited in numerous shows throughout the year.
           </Text>
 
           <Text style={styles.sectionTitle}>
@@ -95,8 +108,8 @@ const mapDispatchToProps = (dispatch: any): DispatchProps => ({
   setGAOptOut: (checked) => dispatch(StartUpActions.setGAOptOut({checked})),
 });
 
-const mapStateToProps = (state: RootState, ownProps: OwnProps): StateProps => {
-  return {gaOptOut: state.setup.gaOptOut};
-};
+const mapStateToProps = (state: RootState, ownProps: OwnProps): StateProps => ({
+  gaOptOut: state.setup.gaOptOut,
+});
 
-export default connect(mapStateToProps, mapDispatchToProps)(AboutScreen) as React.ComponentClass<OwnProps>;
+export default connect(mapStateToProps, mapDispatchToProps)(AboutScreen) as React.ComponentClass<Props>;
