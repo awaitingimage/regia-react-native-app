@@ -2,35 +2,1005 @@
 
 {
     "colors": [
-        {
-            "colourSection": "Yellow",
-            "appletonColourCode": "Bright Yellow 3/4",
-            "naturalDye": "Weld",
-            "mordent": "Alum",
-            "Yarn": "White wool",
-            "colourProduced": "Strong",
-            "regiaCode": "R001",
-            "hexCode": "#f8ed00"
-        },
-        {
-            "colourSection": "Yellow",
-            "appletonColourCode": "Heraldic Gold 4",
-            "naturalDye": "Weld",
-            "mordent": "Alum",
-            "Yarn": "White wool",
-            "colourProduced": "Dark",
-            "regiaCode": "R002",
-            "hexCode": "#ff11ff"
-        },
-        {
-            "colourSection": "Yellow",
-            "appletonColourCode": "Bright Yellow 3/4",
-            "naturalDye": "Weld",
-            "mordent": "Alum",
-            "Yarn": "White wool",
-            "colourProduced": "Strong",
-            "regiaCode": "R001",
-            "hexCode": "#f8ed00"
-        }
+            {
+              "appletonColourCode": "Bright Yellow 3/4",
+              "naturalDye": "Weld",
+              "mordent": "Alum",
+              "Yarn": "White wool",
+              "colourProduced": "Strong",
+              "regiaCode": "R001",
+              "colourSection": "Yellow",
+              "hexCode": "#F7EB34"
+            },
+            {
+              "appletonColourCode": "Heraldic Gold 4",
+              "naturalDye": "Weld",
+              "mordent": "Alum",
+              "Yarn": "White wool",
+              "colourProduced": "Dark",
+              "regiaCode": "R002",
+              "colourSection": "Yellow",
+              "hexCode": "#D1BD3D"
+            },
+            {
+              "appletonColourCode": "Honeysuckle Yellow 2",
+              "naturalDye": "Bearberry leaves",
+              "mordent": "Iron, oak galls",
+              "Yarn": "White wool",
+              "colourProduced": "Apricot beige",
+              "regiaCode": "R003",
+              "colourSection": "Yellow",
+              "hexCode": "#D1C189"
+            },
+            {
+              "appletonColourCode": "Honeysuckle Yellow 2",
+              "naturalDye": "Lady’s Bedstraw",
+              "mordent": "Alum",
+              "Yarn": "Wool",
+              "colourProduced": "Creamy apricot beige",
+              "regiaCode": "R014",
+              "colourSection": "Yellow",
+              "hexCode": "#D1C189"
+            },
+            {
+              "appletonColourCode": "Autumn Yellow 3",
+              "naturalDye": "Persian berries",
+              "mordent": "Tin",
+              "Yarn": "Wool",
+              "colourProduced": "Strong egg yolk",
+              "regiaCode": "R023",
+              "colourSection": "Yellow",
+              "hexCode": "#CB9E4C"
+            },
+            {
+              "appletonColourCode": "Autumn Yellow 3/4",
+              "naturalDye": "Persian berries",
+              "mordent": "Tin and vinegar",
+              "Yarn": "Wool",
+              "colourProduced": "Vivid egg yolk",
+              "regiaCode": "R024",
+              "colourSection": "Yellow",
+              "hexCode": "#B08437"
+            },
+            {
+              "appletonColourCode": "Bright Yellow 3",
+              "naturalDye": "Weld",
+              "mordent": "Alum",
+              "Yarn": "Wool",
+              "colourProduced": "Acid yellow",
+              "regiaCode": "R025",
+              "colourSection": "Yellow",
+              "hexCode": "#F7EB34"
+            },
+            {
+              "appletonColourCode": "Brown Olive 2",
+              "naturalDye": "Onion skins",
+              "mordent": "Tin and iron",
+              "Yarn": "Wool",
+              "colourProduced": "Dull golden yellow",
+              "regiaCode": "R026",
+              "colourSection": "Yellow",
+              "hexCode": "#CCB245"
+            },
+            {
+              "appletonColourCode": "Lemon 996",
+              "naturalDye": "Woad over Weld",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Pale lemon",
+              "regiaCode": "R039",
+              "colourSection": "Yellow",
+              "hexCode": "#C9AA57"
+            },
+            {
+              "appletonColourCode": "Bright Yellow 2",
+              "naturalDye": "Woad over Weld",
+              "mordent": "-",
+              "Yarn": "Linen",
+              "colourProduced": "Very pale yellow",
+              "regiaCode": "R042",
+              "colourSection": "Yellow",
+              "hexCode": "#F3EB47"
+            },
+            {
+              "appletonColourCode": "Lime 997",
+              "naturalDye": "Woad over Weld",
+              "mordent": "-",
+              "Yarn": "Linen",
+              "colourProduced": "Lime",
+              "regiaCode": "R043",
+              "colourSection": "Yellow",
+              "hexCode": "#C3D536"
+            },
+            {
+              "appletonColourCode": "Bright Yellow 1/2",
+              "naturalDye": "Weld",
+              "mordent": "Alum",
+              "Yarn": "Silk",
+              "colourProduced": "Pale citrus yellow",
+              "regiaCode": "R058",
+              "colourSection": "Yellow",
+              "hexCode": "#F0FD37"
+            },
+            {
+              "appletonColourCode": "Bright Yellow 3",
+              "naturalDye": "Weld",
+              "mordent": "Alum",
+              "Yarn": "Wool",
+              "colourProduced": "Acid yellow",
+              "regiaCode": "R059",
+              "colourSection": "Yellow",
+              "hexCode": "#F7EB34"
+            },
+            {
+              "appletonColourCode": "Bright Yellow 3",
+              "naturalDye": "Weld",
+              "mordent": "Tannin and alum",
+              "Yarn": "Linen - bleached",
+              "colourProduced": "Acid yellow",
+              "regiaCode": "R060",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Autumn Gold 4",
+              "naturalDye": "Weld",
+              "mordent": "Tannin and alum",
+              "Yarn": "Linen- unbleached",
+              "colourProduced": "Dark acid yellow",
+              "regiaCode": "R061",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Honeysuckle Yellow 5 / Heraldic Gold 3",
+              "naturalDye": "Weld",
+              "mordent": "Tannin and alum",
+              "Yarn": "Hemp",
+              "colourProduced": "Dull mustard",
+              "regiaCode": "R062",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Heraldic Gold 3/4",
+              "naturalDye": "Onion skins / Turmeric",
+              "mordent": "Copper sulphate and salt",
+              "Yarn": "Wool",
+              "colourProduced": "Mustard",
+              "regiaCode": "R063",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Autumn Yellow 4",
+              "naturalDye": "Onion skins",
+              "mordent": "Tin",
+              "Yarn": "Wool",
+              "colourProduced": "Dull egg yolk",
+              "regiaCode": "R064",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Custard Yellow 851",
+              "naturalDye": "Madder / weld",
+              "mordent": "Alum",
+              "Yarn": "Wool",
+              "colourProduced": "Pale custard",
+              "regiaCode": "R072",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Autumn yellow 5",
+              "naturalDye": "Onion skins",
+              "mordent": "Alum",
+              "Yarn": "Wool",
+              "colourProduced": "Orange",
+              "regiaCode": "R077",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Honeysuckle Yellow 2",
+              "naturalDye": "Black Lovage",
+              "mordent": "Alum",
+              "Yarn": "Wool",
+              "colourProduced": "Creamy yellow",
+              "regiaCode": "R078",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Autumn Yellow 5",
+              "naturalDye": "Turmeric",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Inyerface orange",
+              "regiaCode": "R079",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Honeysuckle Yellow 2",
+              "naturalDye": "Mixed onion skins",
+              "mordent": "Alum",
+              "Yarn": "Wool",
+              "colourProduced": "Creamy apricot beige",
+              "regiaCode": "R080",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Heraldic Gold 3",
+              "naturalDye": "Mixed onion skins",
+              "mordent": "Alum",
+              "Yarn": "Wool",
+              "colourProduced": "Dull mustard",
+              "regiaCode": "R081",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Brown Olive 1/2",
+              "naturalDye": "Mixed onion skins",
+              "mordent": "Alum",
+              "Yarn": "Wool",
+              "colourProduced": "Mustard",
+              "regiaCode": "R082",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Bright Yellow 2",
+              "naturalDye": "Weld",
+              "mordent": "Potash alum and chalk",
+              "Yarn": "Wool",
+              "colourProduced": "Bright pale yellow",
+              "regiaCode": "R083",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Heraldic Gold 4",
+              "naturalDye": "Weld",
+              "mordent": "Potash alum and chalk",
+              "Yarn": "Wool",
+              "colourProduced": "Bright yellow",
+              "regiaCode": "R084",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Bright Yellow 1/2",
+              "naturalDye": "Weld",
+              "mordent": "Potash alum and chalk",
+              "Yarn": "Wool",
+              "colourProduced": "Pale yellow",
+              "regiaCode": "R085",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Bright Yellow 3",
+              "naturalDye": "Weld",
+              "mordent": "Potash alum and chalk",
+              "Yarn": "Wool",
+              "colourProduced": "Bright yellow",
+              "regiaCode": "R086",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Bright Yellow 3/4",
+              "naturalDye": "Weld",
+              "mordent": "Potash alum and chalk",
+              "Yarn": "Wool",
+              "colourProduced": "Dark yellow",
+              "regiaCode": "R087",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Honeysuckle Yellow 4/5",
+              "naturalDye": "Onion skins",
+              "mordent": "Tin",
+              "Yarn": "Wool",
+              "colourProduced": "Dull old gold",
+              "regiaCode": "R094",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Honeysuckle Yellow 3",
+              "naturalDye": "St John’s wort",
+              "mordent": "Alum",
+              "Yarn": "Wool",
+              "colourProduced": "Light custard",
+              "regiaCode": "R095",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Custard Yellow 851",
+              "naturalDye": "Poplar buds",
+              "mordent": "Chrome*",
+              "Yarn": "Wool",
+              "colourProduced": "Apricot pale",
+              "regiaCode": "R096",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Autumn Yellow 3/4",
+              "naturalDye": "Poplar buds",
+              "mordent": "Chrome*",
+              "Yarn": "Wool",
+              "colourProduced": "Dingy egg yolk",
+              "regiaCode": "R097",
+              "colourSection": "Yellow",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Flame Red 5",
+              "naturalDye": "Madder",
+              "mordent": "Alum (tinned copper)",
+              "Yarn": "Wool",
+              "colourProduced": "Light orangey red",
+              "regiaCode": "R020",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Terracotta 4/5",
+              "naturalDye": "Madder",
+              "mordent": "Alum (tinned copper)",
+              "Yarn": "Grey wool",
+              "colourProduced": "Pinky reddish brown",
+              "regiaCode": "R021",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Paprika 2",
+              "naturalDye": "Madder",
+              "mordent": "Alum",
+              "Yarn": "Silk",
+              "colourProduced": "Dark terracotta",
+              "regiaCode": "R044",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Flame Red 5/6",
+              "naturalDye": "Madder",
+              "mordent": "Alum",
+              "Yarn": "Silk",
+              "colourProduced": "Copper pink",
+              "regiaCode": "R045",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Coral 5",
+              "naturalDye": "Madder",
+              "mordent": "Alum",
+              "Yarn": "Wool",
+              "colourProduced": "Pinky red",
+              "regiaCode": "R046",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Paprika",
+              "naturalDye": "Madder",
+              "mordent": "Alum",
+              "Yarn": "Wool",
+              "colourProduced": "Dark terracotta brown",
+              "regiaCode": "R047",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Dull Coral 854",
+              "naturalDye": "Madder",
+              "mordent": "Alum",
+              "Yarn": "Wool",
+              "colourProduced": "Dark salmon",
+              "regiaCode": "R048",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Paprika 6",
+              "naturalDye": "Madder",
+              "mordent": "Alum",
+              "Yarn": "Wool",
+              "colourProduced": "Bright rust red",
+              "regiaCode": "R049",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Flame Red 8/9",
+              "naturalDye": "Woad over madder",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Pinky rust",
+              "regiaCode": "R050",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Flame Red 6",
+              "naturalDye": "Woad over madder",
+              "mordent": "-",
+              "Yarn": "Linen",
+              "colourProduced": "Dark copper pink",
+              "regiaCode": "R052",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Terracotta 6",
+              "naturalDye": "Madder",
+              "mordent": "Tannin and alum",
+              "Yarn": "Linen",
+              "colourProduced": "Pinky reddish brown",
+              "regiaCode": "R065",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Flame Red 7",
+              "naturalDye": "Madder",
+              "mordent": "Tannin and alum",
+              "Yarn": "Hemp",
+              "colourProduced": "Dark copper pink",
+              "regiaCode": "R066",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Coral 3 / Dull Coral 854",
+              "naturalDye": "Madder and weld",
+              "mordent": "Alum",
+              "Yarn": "Wool",
+              "colourProduced": "Burnt orange",
+              "regiaCode": "R073",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Flame Red 7 / Paprika 4",
+              "naturalDye": "Madder",
+              "mordent": "Iron",
+              "Yarn": "Wool",
+              "colourProduced": "Russet",
+              "regiaCode": "R088",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Terracotta 3",
+              "naturalDye": "Madder",
+              "mordent": "Iron",
+              "Yarn": "Wool",
+              "colourProduced": "Salmon",
+              "regiaCode": "R089",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Terracotta 2",
+              "naturalDye": "Madder",
+              "mordent": "Iron",
+              "Yarn": "Wool",
+              "colourProduced": "Dull salmon",
+              "regiaCode": "R090",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Paprika 2",
+              "naturalDye": "Madder",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Bright russet",
+              "regiaCode": "R091",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Flame Red 6",
+              "naturalDye": "Madder",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Terracotta pot",
+              "regiaCode": "R092",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Flame Red 5",
+              "naturalDye": "Madder",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Copper pink",
+              "regiaCode": "R093",
+              "colourSection": "Red",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Brown Olive 2",
+              "naturalDye": "Bearberry leaves, overdyed weld",
+              "mordent": "Iron, oak galls",
+              "Yarn": "White wool",
+              "colourProduced": "Dark mustard",
+              "regiaCode": "R004",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Brown Olive 1",
+              "naturalDye": "Weld",
+              "mordent": "Iron water",
+              "Yarn": "White wool",
+              "colourProduced": "Greenish gold",
+              "regiaCode": "R005",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Early English Green 8",
+              "naturalDye": "Woad overdye weld",
+              "mordent": "Alum",
+              "Yarn": "White wool",
+              "colourProduced": "Baize",
+              "regiaCode": "R006",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Drab Green 2",
+              "naturalDye": "Dock",
+              "mordent": "Copper sulphate",
+              "Yarn": "Wool",
+              "colourProduced": "Washed out golden beige",
+              "regiaCode": "R015",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Mid Olive Green 2",
+              "naturalDye": "Ground ivy",
+              "mordent": "Copper sulphate",
+              "Yarn": "Wool",
+              "colourProduced": "Washed out olive",
+              "regiaCode": "R016",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Mid Olive Green 1",
+              "naturalDye": "Young bracken leaves",
+              "mordent": "Chrome*",
+              "Yarn": "Wool",
+              "colourProduced": "Washed out olive",
+              "regiaCode": "R018",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Drab Green 1/2",
+              "naturalDye": "Weld",
+              "mordent": "Copper sulphate",
+              "Yarn": "Wool",
+              "colourProduced": "Washed out golden olive",
+              "regiaCode": "R027",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Jacobean Green 2/3",
+              "naturalDye": "Bracken young leaves",
+              "mordent": "Copper sulphate",
+              "Yarn": "Wool",
+              "colourProduced": "Dull olive",
+              "regiaCode": "R028",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Grey Green 1",
+              "naturalDye": "Woad",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Very washed out blue green",
+              "regiaCode": "R035",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Grass Green 3",
+              "naturalDye": "Woad over weld",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Fresh grass",
+              "regiaCode": "R036",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Early English Green 3",
+              "naturalDye": "Woad over weld",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Grass green",
+              "regiaCode": "R037",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Lime 997",
+              "naturalDye": "Woad over weld",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Lime",
+              "regiaCode": "R038",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Early English Green 2",
+              "naturalDye": "Woad over weld",
+              "mordent": "-",
+              "Yarn": "Silk",
+              "colourProduced": "Washed out yellow green",
+              "regiaCode": "R040",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Grey Green 2",
+              "naturalDye": "Woad over weld",
+              "mordent": "-",
+              "Yarn": "Silk",
+              "colourProduced": "Very pale green",
+              "regiaCode": "",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Drab Green 4/Olive Green 3",
+              "naturalDye": "Weld",
+              "mordent": "Alum (iron) and cream of tartar",
+              "Yarn": "Wool",
+              "colourProduced": "Olive green",
+              "regiaCode": "R075",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Grass Green",
+              "naturalDye": "Weld",
+              "mordent": "Alum (iron) and cream of tartar",
+              "Yarn": "Wool",
+              "colourProduced": "Light green",
+              "regiaCode": "R076",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Drab Green 3/Olive Green 2",
+              "naturalDye": "Weld",
+              "mordent": "Alum (iron) cream of tartar",
+              "Yarn": "Wool",
+              "colourProduced": "Light olive",
+              "regiaCode": "R099",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Jacobean Green 2",
+              "naturalDye": "Elderberries",
+              "mordent": "Chrome*",
+              "Yarn": "Wool",
+              "colourProduced": "Dull ivy green",
+              "regiaCode": "R100",
+              "colourSection": "Green",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Elephant Grey 6",
+              "naturalDye": "Woad overdyed madder",
+              "mordent": "-",
+              "Yarn": "White wool",
+              "colourProduced": "Dark brown grey",
+              "regiaCode": "R012",
+              "colourSection": "Brown",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Iron Grey 8",
+              "naturalDye": "Woad overdyed madder",
+              "mordent": "-",
+              "Yarn": "White wool",
+              "colourProduced": "Slate brown",
+              "regiaCode": "R013",
+              "colourSection": "Brown",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Fawn 1",
+              "naturalDye": "Oak",
+              "mordent": "Chrome*",
+              "Yarn": "Wool",
+              "colourProduced": "Golden fawn",
+              "regiaCode": "R017",
+              "colourSection": "Brown",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Golden Brown 5",
+              "naturalDye": "Madder",
+              "mordent": "Alum, in tinned copper",
+              "Yarn": "Shetland moorit wool",
+              "colourProduced": "Red brown",
+              "regiaCode": "R019",
+              "colourSection": "Brown",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Biscuit Brown 5/6",
+              "naturalDye": "Woad over madder",
+              "mordent": "-",
+              "Yarn": "Silk",
+              "colourProduced": "Copper",
+              "regiaCode": "R051",
+              "colourSection": "Brown",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Red Fawn 3",
+              "naturalDye": "Walnut hull",
+              "mordent": "-",
+              "Yarn": "Silk",
+              "colourProduced": "Mid brown",
+              "regiaCode": "R053",
+              "colourSection": "Brown",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Biscuit Brown 7",
+              "naturalDye": "Walnut hull",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Chestnut",
+              "regiaCode": "R054",
+              "colourSection": "Brown",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Putty Groundings 6",
+              "naturalDye": "Walnut hull",
+              "mordent": "-",
+              "Yarn": "Linen",
+              "colourProduced": "Milky coffee",
+              "regiaCode": "R055",
+              "colourSection": "Brown",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Brown Olive 3",
+              "naturalDye": "Onion skins",
+              "mordent": "Copper sulphate",
+              "Yarn": "Wool",
+              "colourProduced": "Old gold",
+              "regiaCode": "R067",
+              "colourSection": "Brown",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Biscuit Brown 1/2",
+              "naturalDye": "Onion skins",
+              "mordent": "Iron",
+              "Yarn": "Wool",
+              "colourProduced": "Dark fawn",
+              "regiaCode": "R068",
+              "colourSection": "Brown",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Chocolate 2",
+              "naturalDye": "Elderberries",
+              "mordent": "Alum",
+              "Yarn": "Wool",
+              "colourProduced": "Nondescript beige",
+              "regiaCode": "R069",
+              "colourSection": "Brown",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Biscuit Brown 1",
+              "naturalDye": "Walnut (All)",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Fawn",
+              "regiaCode": "R074",
+              "colourSection": "Brown",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Bright China Blue 9",
+              "naturalDye": "Woad overdyed madder",
+              "mordent": "-",
+              "Yarn": "White wool",
+              "colourProduced": "French navy",
+              "regiaCode": "R007",
+              "colourSection": "Blue",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Bright China Blue 5",
+              "naturalDye": "Woad",
+              "mordent": "-",
+              "Yarn": "White wool",
+              "colourProduced": "Wedgwood",
+              "regiaCode": "R008",
+              "colourSection": "Blue",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Bright China Blue 6",
+              "naturalDye": "Woad",
+              "mordent": "-",
+              "Yarn": "White wool",
+              "colourProduced": "Denim",
+              "regiaCode": "R009",
+              "colourSection": "Blue",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Bright China Blue 7",
+              "naturalDye": "Woad",
+              "mordent": "-",
+              "Yarn": "White wool",
+              "colourProduced": "Dark denim",
+              "regiaCode": "R010",
+              "colourSection": "Blue",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Bright China Blue 8",
+              "naturalDye": "Woad",
+              "mordent": "-",
+              "Yarn": "White wool",
+              "colourProduced": "Navy",
+              "regiaCode": "R011",
+              "colourSection": "Blue",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Turquoise 1",
+              "naturalDye": "Woad",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Washed out turquoise",
+              "regiaCode": "R029",
+              "colourSection": "Blue",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Turquoise 2",
+              "naturalDye": "Woad",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Pale turquoise",
+              "regiaCode": "R030",
+              "colourSection": "Blue",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Turquoise 2",
+              "naturalDye": "Woad",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Turquoise",
+              "regiaCode": "R031",
+              "colourSection": "Blue",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Sky Blue 4/5",
+              "naturalDye": "Woad",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Light denim",
+              "regiaCode": "R032",
+              "colourSection": "Blue",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Sky Blue 1",
+              "naturalDye": "Woad",
+              "mordent": "-",
+              "Yarn": "Linen",
+              "colourProduced": "Baby blue",
+              "regiaCode": "R033",
+              "colourSection": "Blue",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Peacock Blue 1",
+              "naturalDye": "Woad",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Washed out blue green",
+              "regiaCode": "R034",
+              "colourSection": "Blue",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Mauve 5",
+              "naturalDye": "Woad over cochineal",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Mulberry pink",
+              "regiaCode": "R056",
+              "colourSection": "Purple",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Mauve 3",
+              "naturalDye": "Woad over cochineal",
+              "mordent": "-",
+              "Yarn": "Wool",
+              "colourProduced": "Dull mulberry pink",
+              "regiaCode": "R057",
+              "colourSection": "Purple",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Flame Red 3",
+              "naturalDye": "Madder",
+              "mordent": "Alum (tinned copper)",
+              "Yarn": "Wool",
+              "colourProduced": "Salmon",
+              "regiaCode": "R022",
+              "colourSection": "Pink",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Dull Rose Pink 1 / Flame Red 3",
+              "naturalDye": "Elderberries",
+              "mordent": "Salt",
+              "Yarn": "Wool",
+              "colourProduced": "Dull pinky salmon",
+              "regiaCode": "R070",
+              "colourSection": "Pink",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Dull Mauve 1",
+              "naturalDye": "Elderberries",
+              "mordent": "Salt",
+              "Yarn": "Wool",
+              "colourProduced": "Pinky beige",
+              "regiaCode": "R071",
+              "colourSection": "Pink",
+              "hexCode": "#FFFFFF"
+            },
+            {
+              "appletonColourCode": "Flesh Tint 3",
+              "naturalDye": "St. John's Wort",
+              "mordent": "Alum",
+              "Yarn": "Wool",
+              "colourProduced": "Flesh",
+              "regiaCode": "R098",
+              "colourSection": "Pink",
+              "hexCode": "#FFFFFF"
+            }
     ]
 }

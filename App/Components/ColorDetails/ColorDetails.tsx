@@ -19,7 +19,14 @@ const ColorDetails: React.SFC<Props> = ({ color }: Props) => {
   return (
     <View style={styles.container}>
       <Text style={styles.marginBottom}/>
-<Text>asd</Text>
+        <Text>Colour section: {color.colourSection}</Text>
+        <Text>Appleton colour code: {color.appletonColourCode}</Text>
+        <Text>Natural dye: {color.naturalDye}</Text>
+        <Text>Mordent: {color.mordent}</Text>
+        <Text>Yarn: {color.Yarn}</Text>
+        <Text>Colour produced: {color.colourProduced}</Text>
+        <Text>Regia code: {color.regiaCode}</Text>
+        <Text>Hexidecimal code: {color.hexCode}</Text>
       <Text style={styles.marginBottom}/>
     </View>
   );

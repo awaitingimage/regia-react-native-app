@@ -18,7 +18,7 @@ export const ListColor: React.SFC<Props> = ({ color, contentRenderer }: Props) =
 
   const renderHeader = (s: Color, index: number, isActive: boolean) => (
       <View style={[styles.textWrapper, {backgroundColor: color.hexCode}]}>
-        <Text style={styles.boldLabel}>{entities.decode(color.hexCode)}</Text>
+        <Text style={styles.boldLabel}/>
         <View style={styles.chevronWrap}>
           <Icon name={isActive ? "ios-arrow-up" : "ios-arrow-down"} style={styles.chevron} />
         </View>
