@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -1632,8 +1633,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.awaitingimage.regiaanglorum;
 				PRODUCT_NAME = RegiaAnglorum;
-				PROVISIONING_PROFILE = "471e23bf-07f6-44e9-8ca7-bc1366e937df";
-				PROVISIONING_PROFILE_SPECIFIER = "Awaiting Image Hockey App";
+				PROVISIONING_PROFILE = "598f1ca8-1494-4b6a-87cb-690c0602c556";
+				PROVISIONING_PROFILE_SPECIFIER = "Awaiting Image";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1666,8 +1667,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.awaitingimage.regiaanglorum;
 				PRODUCT_NAME = RegiaAnglorum;
-				PROVISIONING_PROFILE = "471e23bf-07f6-44e9-8ca7-bc1366e937df";
-				PROVISIONING_PROFILE_SPECIFIER = "Awaiting Image Hockey App";
+				PROVISIONING_PROFILE = "598f1ca8-1494-4b6a-87cb-690c0602c556";
+				PROVISIONING_PROFILE_SPECIFIER = "Awaiting Image";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
