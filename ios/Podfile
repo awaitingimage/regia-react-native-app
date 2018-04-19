@@ -1,4 +1,6 @@
 target 'RegiaAnglorum' do
     use_frameworks!
     pod "HockeySDK"
+    pod 'ReactNativeSearchBar', :path => '../node_modules/react-native-search-bar'
+
   end
