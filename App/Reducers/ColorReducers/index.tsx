@@ -10,6 +10,7 @@ const actionCreators = {
     fetchColors: createAction("COLORS_FETCH"),
     successFetchingColors: createAction("COLORS_FETCH_SUCCESS", (payload: Colors) => ({type: "COLORS_FETCH_SUCCESS", payload})),
     failureFechingColors: createAction("COLORS_FETCH_FAILURE"),
+    toggleCollapsed: createAction("TOGGLE_COLLAPSED"),
     rehydrate: createAction("persist/REHYDRATE", (payload: any) => ({type: "persist/REHYDRATE", payload})),
 };
 
@@ -19,6 +20,7 @@ export interface ColorState {
     Colors: Color[];
     fetching?: boolean;
     error?: boolean | null;
+    isCollapsed: boolean;
   }
 
 export type ImmutableColorState = SI.ImmutableObject<ColorState>;
@@ -27,10 +29,14 @@ export const INITIAL_STATE: ImmutableColorState = SI.from({
     fetching: false,
     error: null,
     Colors: [],
+    isCollapsed: true,
 });
 
 export const fetchColors: Reducer<ImmutableColorState> =
     (state: ImmutableColorState) => state.merge({ fetching: true });
+
+export const toggleCollapsed: Reducer<ImmutableColorState> =
+    (state: ImmutableColorState) => state.merge({ isCollapsed: !state.isCollapsed });
 
 export const successFetchingColors: Reducer<ImmutableColorState> =
     (state: ImmutableColorState, action: AnyAction & {payload?: ColorSuccessParams}) => {
@@ -56,6 +62,7 @@ const reducerMap: ReducerMap<typeof actionCreators, ImmutableColorState> = {
     successFetchingColors,
     failureFechingColors,
     rehydrate,
+    toggleCollapsed,
   };
 
 export const ColorReducer = mapReducers(INITIAL_STATE, reducerMap, actionCreators);

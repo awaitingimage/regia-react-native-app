@@ -1,16 +1,17 @@
 import moment from "moment";
 import * as React from "react";
 import { Image, Linking, ScrollView, Switch, Text, View } from "react-native";
+import Collapsible from "react-native-collapsible";
 import { SearchBar } from "react-native-elements";
 import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
 import { NavigationScreenProps } from "react-navigation";
 import { connect } from "react-redux";
 import Checkbox from "../../Components/Checkbox";
-import ColorDetails from "../../Components/ColorDetails";
 import NavBar from "../../Components/NavBar";
 import PrivateConfig from "../../Config/PrivateConfig";
 import { Color } from "../../Lib/Colors";
 import { RootState } from "../../Reducers";
+import {ColorActions} from "../../Reducers/ColorReducers";
 import { StartUpActions } from "../../Reducers/StartupReducers";
 import { Images } from "../../Themes";
 import projectColours from "../../Themes/Colors";
@@ -35,6 +36,7 @@ export interface DispatchProps {
  */
 export interface StateProps {
   colors: Color[];
+  isCollapsed: boolean;
 }
 
 /**
@@ -51,6 +53,7 @@ class ColorScreen extends React.Component<Props, State> {
     super(props);
     this.state = {
       searchText: "",
+      color: {},
     };
   }
 
@@ -59,7 +62,28 @@ class ColorScreen extends React.Component<Props, State> {
     tracker.trackScreenView("About");
   }
 
+  public onColorClick = (color: Color) => (e) => {
+    this.setState({color});
+    this.props.toggleCollapsed();
+  }
+
+  public hexToRgb = (hex: string) => {
+    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16),
+    } : {
+      r: 0,
+      g: 0,
+      b: 0,
+  };
+}
+
   public render() {
+
+    const rgbColor = this.hexToRgb(this.state.color.hexCode);
+    const textColour = ((rgbColor.r * 0.299 + rgbColor.g * 0.587 + rgbColor.b * 0.114) > 186) ? "#000000" : "#ffffff";
 
     // Get list of colours based on search box match against any colour property
     const colors = this.props.colors.filter((colour) => {
@@ -83,31 +107,39 @@ class ColorScreen extends React.Component<Props, State> {
           onBurgerPress={() => this.props.navigation.navigate("DrawerOpen")}
         />
 
-      <SearchBar
-        value={this.state.searchText}
-        onChangeText={(searchText) => this.setState({searchText})}
-        onClearText={() => this.setState({searchText: ""})}
-        placeholder="Search for colour"
-        clearIcon
-        lightTheme
-        round
-        containerStyle={{backgroundColor: projectColours.primaryOrange}}
-      />
+        <SearchBar
+          value={this.state.searchText}
+          onChangeText={(searchText) => this.setState({searchText})}
+          onClearText={() => this.setState({searchText: ""})}
+          placeholder="Search for colour"
+          clearIcon
+          lightTheme
+          round
+          // containerStyle={{backgroundColor: projectColours.primaryOrange}}
+        />
 
-          <ColorList
-            data={colors}
-            contentRenderer={ColorDetails}
-          />
+        <Collapsible collapsed={this.props.isCollapsed}>
+          <Text style={[styles.text, {backgroundColor: this.state.color.hexCode, color: textColour}]}>
+          {this.state.color.appletonColourCode}
+          </Text>
+        </Collapsible>
+
+        <ColorList
+          data={colors}
+          onColorPress={this.onColorClick}
+        />
       </View>
     );
   }
 }
 
 const mapDispatchToProps = (dispatch: any): DispatchProps => ({
+  toggleCollapsed: () => dispatch(ColorActions.toggleCollapsed()),
 });
 
 const mapStateToProps = (state: RootState, ownProps: OwnProps): StateProps => ({
   colors: state.color.Colors,
+  isCollapsed: state.color.isCollapsed,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ColorScreen) as React.ComponentClass<OwnProps>;

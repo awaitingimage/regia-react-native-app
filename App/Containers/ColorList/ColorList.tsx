@@ -1,8 +1,8 @@
 import * as React from "react";
-import { FlatList, Text, View } from "react-native";
+import { FlatList, Linking, Text, TouchableOpacity, View } from "react-native";
+import Collapsible from "react-native-collapsible";
 import { connect } from "react-redux";
 import FlatListFooter from "../../Components/FlatListFooter";
-import ListColor from "../../Components/ListColor";
 import PrimaryButton from "../../Components/PrimaryButton";
 import { Color } from "../../Lib/Colors";
 
@@ -12,8 +12,8 @@ import styles from "./Style";
 
 interface Props {
   data: Color[];
-  contentRenderer: React.SFC<{color: Color}>;
   noDataAction: any;
+  onColorPress: () => null;
 }
 
 export default class ColorList extends React.PureComponent<Props> {
@@ -25,16 +25,28 @@ export default class ColorList extends React.PureComponent<Props> {
 
   public renderRow = ({item}: {item: Color}) => {
     return (
-      <ListColor
-        color={item}
-        contentRenderer={this.props.contentRenderer}
+      <TouchableOpacity
+        onPress={this.props.onColorPress(item)}
+        style={[styles.colorContainer, {backgroundColor: item.hexCode}]}
       />
     );
   }
 
   // Render a header?
-  public renderHeader = () =>
-    <Text style={[styles.label]}> - Header - </Text>
+  public renderHeader = () => {
+    return (
+    <Collapsible collapsed={false}>
+      <Text style={styles.text}>The grid below shows all the colours that have been recreated using various combinations of dyes and mordents.
+      each colour has a unique Regia code (which can be cross-refenced to further
+        information about the dye job, e.g. water pH, dye vessel used, etc.) and an Appletons
+         colour/code. You can obtain Appletons shade cards from{" "}
+         <Text style={styles.address} onPress={() => Linking.openURL("http://www.appletons.org.uk/colours").catch((err) => console.log(err))}>www.appletons.org.uk/colours</Text>
+          {" "}and use these in conjunction with the grid below to identify authentically coloured fabrics.
+      </Text>
+    </Collapsible>
+    );
+
+  }
 
   // Render a footer?
   public renderFooter = () => (
@@ -55,6 +67,8 @@ export default class ColorList extends React.PureComponent<Props> {
     return (
       <View style={styles.container}>
         <FlatList
+          numColumns={5}
+          horizontal={false}
           contentContainerStyle={styles.listContent}
           data={this.props.data}
           renderItem={this.renderRow}
@@ -62,6 +76,7 @@ export default class ColorList extends React.PureComponent<Props> {
           initialNumToRender={8}
           ref={(ref) => { this.flatListRef = ref; }}
           ListFooterComponent={this.renderFooter}
+          ListHeaderComponent={this.renderHeader}
           ListEmptyComponent={this.renderEmpty}
         />
       </View>
