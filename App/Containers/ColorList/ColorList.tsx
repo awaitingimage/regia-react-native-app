@@ -35,15 +35,16 @@ export default class ColorList extends React.PureComponent<Props> {
   // Render a header?
   public renderHeader = () => {
     return (
-    <Collapsible collapsed={false}>
-      <Text style={styles.text}>The grid below shows all the colours that have been recreated using various combinations of dyes and mordents.
-      each colour has a unique Regia code (which can be cross-refenced to further
-        information about the dye job, e.g. water pH, dye vessel used, etc.) and an Appletons
-         colour/code. You can obtain Appletons shade cards from{" "}
-         <Text style={styles.address} onPress={() => Linking.openURL("http://www.appletons.org.uk/colours").catch((err) => console.log(err))}>www.appletons.org.uk/colours</Text>
-          {" "}and use these in conjunction with the grid below to identify authentically coloured fabrics.
-      </Text>
-    </Collapsible>
+    // <Collapsible collapsed={false}>
+    //   <Text style={styles.text}>The grid below shows all the colours that have been recreated using various combinations of dyes and mordents.
+    //   each colour has a unique Regia code (which can be cross-refenced to further
+    //     information about the dye job, e.g. water pH, dye vessel used, etc.) and an Appletons
+    //      colour/code. You can obtain Appletons shade cards from{" "}
+    //      <Text style={styles.address} onPress={() => Linking.openURL("http://www.appletons.org.uk/colours").catch((err) => console.log(err))}>www.appletons.org.uk/colours</Text>
+    //       {" "}and use these in conjunction with the grid below to identify authentically coloured fabrics.
+    //   </Text>
+    // </Collapsible>
+    <View/>
     );
 
   }

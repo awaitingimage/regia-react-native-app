@@ -58,7 +58,15 @@ const ColorCollapsible: React.SFC<Props> = ({color, isCollapsed}: Props) =>  {
   return (
     <Collapsible collapsed={isCollapsed}>
       <Text style={[styles.text, {backgroundColor: color.hexCode, color: textColour}]}>
-        {color.appletonColourCode}
+        {color.appletonColourCode} {"\n"}
+        {color.naturalDye} {"\n"}
+        {color.mordent} {"\n"}
+        {color.Yarn} {"\n"}
+        {color.colourProduced} {"\n"}
+        {color.regiaCode} {"\n"}
+        {color.colourSection} {"\n"}
+        {color.hexCode} {"\n"}
+        {color.rank} {"\n"}
       </Text>
     </Collapsible>
     );

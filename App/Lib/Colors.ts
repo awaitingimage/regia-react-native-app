@@ -11,4 +11,5 @@ export interface Color {
     colourProduced: string;
     regiaCode: string;
     hexCode: string;
+    rank: string;
 }
