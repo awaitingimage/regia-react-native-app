@@ -12,8 +12,8 @@ import styles from "./Style";
 
 interface Props {
   data: Color[];
-  noDataAction: any;
-  onColorPress: () => null;
+  noDataAction?: any;
+  onColorPress: (color: Color) => (e: any) => void;
 }
 
 export default class ColorList extends React.PureComponent<Props> {
