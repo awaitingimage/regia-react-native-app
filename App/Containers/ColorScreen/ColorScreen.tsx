@@ -12,6 +12,7 @@ import ColorCollapsible from "../../Components/ColorCollapsible";
 import NavBar from "../../Components/NavBar";
 import PrivateConfig from "../../Config/PrivateConfig";
 import { Color } from "../../Lib/Colors";
+import { nearestFrom, rgbaToHex } from "../../Lib/nearestColor1";
 import { RootState } from "../../Reducers";
 import {ColorActions} from "../../Reducers/ColorReducers";
 import { StartUpActions } from "../../Reducers/StartupReducers";
@@ -53,20 +54,6 @@ export interface State {
   nearestColour: string;
 }
 
-const trim = (str) => {
-  return str.replace(/^\s+|\s+$/gm, "");
-};
-
-const rgbaToHex = (rgba) => {
-    const parts = rgba.substring(rgba.indexOf("(")).split(","),
-        r = parseInt(trim(parts[0].substring(1)), 10),
-        g = parseInt(trim(parts[1]), 10),
-        b = parseInt(trim(parts[2]), 10),
-        a = parseFloat(trim(parts[3].substring(0, parts[3].length - 1))).toFixed(2);
-
-    return ("#" + r.toString(16) + g.toString(16) + b.toString(16));
-};
-
 type Props = StateProps & DispatchProps & OwnProps;
 
 class ColorScreen extends React.Component<Props, State> {
@@ -101,11 +88,10 @@ class ColorScreen extends React.Component<Props, State> {
             blue: "#F7EB34",
           };
 
-          const nearestColor = require("../../Lib/nearestColor").from(this.props.colors);
-          console.log(rgbaToHex(swatches[0].color));
-          console.log(nearestColor(rgbaToHex(swatches[0].color)).name);
-          this.setState({mainColour: rgbaToHex(swatches[0].color), searchText: nearestColor(rgbaToHex(swatches[0].color)).name});
-          
+          const nearestColor2 = nearestFrom(this.props.colors);
+
+          this.setState({mainColour: rgbaToHex(swatches[0].color), searchText: nearestColor2(rgbaToHex(swatches[0].color)).name});
+
           swatches.forEach((swatch) => {
             console.log(swatch);
           });
