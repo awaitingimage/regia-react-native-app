@@ -1,4 +1,8 @@
 rootProject.name = 'RegiaAnglorum'
+include ':react-native-image-picker'
+project(':react-native-image-picker').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-image-picker/android')
+include ':react-native-palette'
+project(':react-native-palette').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-palette/android')
 include ':react-native-add-calendar-event'
 project(':react-native-add-calendar-event').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-add-calendar-event/android')
 include ':react-native-google-analytics-bridge'

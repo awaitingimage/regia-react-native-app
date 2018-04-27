@@ -1,8 +1,10 @@
 import moment from "moment";
 import * as React from "react";
-import { Image, Linking, ScrollView, Switch, Text, View } from "react-native";
-import { SearchBar } from "react-native-elements";
+import { Image, Linking, Platform, ScrollView, Switch, Text, View } from "react-native";
+import { Button, SearchBar } from "react-native-elements";
 import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
+import ImagePicker from "react-native-image-picker";
+import {getAllSwatches} from "react-native-palette";
 import { NavigationScreenProps } from "react-navigation";
 import { connect } from "react-redux";
 import Checkbox from "../../Components/Checkbox";
@@ -46,7 +48,24 @@ export interface StateProps {
 export interface State {
   color: Color | null;
   searchText: string;
+  imageLocation: string;
+  mainColour: string;
+  nearestColour: string;
 }
+
+const trim = (str) => {
+  return str.replace(/^\s+|\s+$/gm, "");
+};
+
+const rgbaToHex = (rgba) => {
+    const parts = rgba.substring(rgba.indexOf("(")).split(","),
+        r = parseInt(trim(parts[0].substring(1)), 10),
+        g = parseInt(trim(parts[1]), 10),
+        b = parseInt(trim(parts[2]), 10),
+        a = parseFloat(trim(parts[3].substring(0, parts[3].length - 1))).toFixed(2);
+
+    return ("#" + r.toString(16) + g.toString(16) + b.toString(16));
+};
 
 type Props = StateProps & DispatchProps & OwnProps;
 
@@ -57,7 +76,42 @@ class ColorScreen extends React.Component<Props, State> {
     this.state = {
       searchText: "",
       color: null,
+      imageLocation: "",
+      mainColour: "rgba(0,0,0,0)",
+      nearestColour: "#ffffff",
     };
+  }
+
+  public getImageColours = () => {
+    ImagePicker.launchImageLibrary({}, (response)  => {
+      const path =  Platform.OS === "ios" ? response.origURL : response.path;
+      const imageLocation = response.uri;
+      this.setState({imageLocation});
+      getAllSwatches({}, path, (error, swatches) => {
+        if (error) {
+          console.log(error);
+        } else {
+          swatches.sort((a, b) => {
+            return b.population - a.population;
+          });
+
+          const colors = {
+            red: "#F7EB34",
+            yellow: "#F7EB34",
+            blue: "#F7EB34",
+          };
+
+          const nearestColor = require("../../Lib/nearestColor").from(this.props.colors);
+          console.log(rgbaToHex(swatches[0].color));
+          console.log(nearestColor(rgbaToHex(swatches[0].color)).name);
+          this.setState({mainColour: rgbaToHex(swatches[0].color), searchText: nearestColor(rgbaToHex(swatches[0].color)).name});
+          
+          swatches.forEach((swatch) => {
+            console.log(swatch);
+          });
+        }
+      });
+    });
   }
 
   public componentWillMount() {
@@ -106,6 +160,18 @@ class ColorScreen extends React.Component<Props, State> {
           round
           // containerStyle={{backgroundColor: projectColours.primaryOrange}}
         />
+
+        <Button
+          onPress={this.getImageColours}
+          iconRight={{name: "code"}}
+          title="Take picture"
+        />
+
+        <Image
+          style={{width: 50, height: 50}}
+          source={{uri: this.state.imageLocation}}
+        />
+        <Text style={{backgroundColor: this.state.mainColour}}>{this.state.mainColour}</Text>
 
         <ColorCollapsible color={this.state.color} isCollapsed={this.props.isCollapsed}/>
 

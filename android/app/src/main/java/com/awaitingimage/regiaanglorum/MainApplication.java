@@ -3,6 +3,8 @@ package com.awaitingimage.regiaanglorum;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.imagepicker.ImagePickerPackage;
+import io.palette.RNPalettePackage;
 import com.vonovak.AddCalendarEventPackage;
 import com.idehub.GoogleAnalyticsBridge.GoogleAnalyticsBridgePackage;
 import com.slowpath.hockeyapp.RNHockeyAppModule;
@@ -31,6 +33,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ImagePickerPackage(),
+            new RNPalettePackage(),
             new AddCalendarEventPackage(),
             new GoogleAnalyticsBridgePackage(),
             new RNHockeyAppPackage(MainApplication.this),

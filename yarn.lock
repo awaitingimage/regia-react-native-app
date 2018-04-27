@@ -6244,6 +6244,10 @@ ncname@1.0.x:
   dependencies:
     xml-char-classes "^1.0.0"
 
+nearest-color@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/nearest-color/-/nearest-color-0.4.2.tgz#6ebd3a859969e76dd834e609beeecef73c3881e0"
+
 negotiator@0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.5.3.tgz#269d5c476810ec92edbe7b6c2f28316384f9a7e8"
@@ -7815,9 +7819,17 @@ react-native-i18n@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/react-native-i18n/-/react-native-i18n-1.0.0.tgz#0c407d9ebb846aae1aa5e05de6503008553f02fd"
 
+react-native-image-picker@^0.26.7:
+  version "0.26.7"
+  resolved "https://registry.yarnpkg.com/react-native-image-picker/-/react-native-image-picker-0.26.7.tgz#ad2ee957f7f6cc01396893ea03d84cb2adb2e376"
+
 react-native-iphone-x-helper@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.0.2.tgz#7dbca530930f7c1ce8633cc8fd13ba94102992e1"
+
+react-native-palette@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/react-native-palette/-/react-native-palette-0.3.2.tgz#56579d222618678f4b650100e2d7796560480da5"
 
 react-native-tab-view@^0.0.65:
   version "0.0.65"
