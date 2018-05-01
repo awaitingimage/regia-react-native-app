@@ -24,7 +24,10 @@ const colors = {
   text: "#E0D7E5",
   link: "#1a0dab",
 
+  grey3: "#86939e",
+  grey4: "#bdc6cf",
   darkgrey: "#333333",
+  lightgrey: "#e1e8ee",
   primaryText: "black",
   primaryOrange: "#D98310",
   primaryGrey: "#aaaaaa",

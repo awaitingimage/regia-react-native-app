@@ -1,9 +1,10 @@
 import { nearestFrom, rgbaToHex } from "nearest-colors";
 import * as React from "react";
-import { Image, Platform, Text, TextStyle, TouchableOpacity, View, ViewStyle } from "react-native";
+import { Image, Platform, Text, TextInput, TouchableOpacity, View } from "react-native";
 import { Button, SearchBar } from "react-native-elements";
 import ImagePicker from "react-native-image-picker";
 import {getAllSwatches} from "react-native-palette";
+import Icon from "react-native-vector-icons/FontAwesome";
 import { connect } from "react-redux";
 import { Color } from "../../Lib/Colors";
 import { Colors } from "../../Themes/index";
@@ -30,17 +31,29 @@ export default class ColorSearch extends React.Component<Props, State> {
     super(props);
     this.state = {
       imageLocation: "",
-      mainColour: "rgba(0,0,0,0)",
+      mainColour: "",
       searchText: "",
       nearestColors: [],
     };
+  }
+
+  public clearText = () => {
+    this.setState({searchText: "", imageLocation: "", nearestColors: [], mainColour: ""});
+    this.props.onChange([]);
+  }
+
+  public onUpdateInput = (searchText: string) => {
+    this.setState({searchText});
+    if (this.state.nearestColors.length < 1) {
+      this.props.onChange([searchText]);
+    }
   }
 
   public getImageColours = () => {
     ImagePicker.launchImageLibrary({}, (response)  => {
       const path =  Platform.OS === "ios" ? response.origURL : response.path;
       const imageLocation = response.uri;
-      this.setState({imageLocation});
+      this.setState({imageLocation, searchText: imageLocation});
       getAllSwatches({}, path, (error, swatches) => {
         if (error) {
           console.log(error);
@@ -57,41 +70,40 @@ export default class ColorSearch extends React.Component<Props, State> {
 
           this.props.onChange(nearestColors);
 
-          this.setState({mainColour: rgbaToHex(swatches[0].color)});
-
-          // swatches.forEach((swatch) => {
-          //   console.log(swatch);
-          // });
+          this.setState({mainColour: rgbaToHex(swatches[0].color), nearestColors});
         }
       });
     });
   }
 
   public render() {
+    const selectedImage = this.state.imageLocation ? <Image style={{width: 50, height: 50}} source={{uri: this.state.imageLocation}}/> : <View/>;
+    const dominantColor = this.state.mainColour ? <Text style={{backgroundColor: this.state.mainColour}}>{this.state.mainColour}</Text> : <View/>;
+
     return (
       <View>
-        <SearchBar
-          value={this.state.searchText}
-          onChangeText={(searchText) => this.setState({searchText})}
-          onClearText={() => this.setState({searchText: ""})}
-          placeholder="Search for colour"
-          clearIcon={true}
-          lightTheme
-          round
-        />
 
-      <Button
-        onPress={this.getImageColours}
-        iconRight={{name: "code"}}
-        title="Take picture"
-      />
+        <View style={styles.container}>
+          <TextInput
+            style={styles.input}
+            placeholder="Search for colour"
+            onChangeText={this.onUpdateInput}
+            value={this.state.searchText}
+          />
+          <Icon
+            style={[styles.icon, styles.searchIcon]}
+            name={"search"}
+          />
+          <Icon
+            style={[styles.icon, styles.clearIcon]}
+            onPress={this.state.searchText ? this.clearText : this.getImageColours}
+            name={this.state.searchText ? "close" : "camera"}
+          />
+        </View>
 
-      <Image
-        style={{width: 50, height: 50}}
-        source={{uri: this.state.imageLocation}}
-      />
+        {selectedImage}
 
-      <Text style={{backgroundColor: this.state.mainColour}}>{this.state.mainColour}</Text>
+        {dominantColor}
 
     </View>
     );
