@@ -50,7 +50,7 @@ export default class ColorSearch extends React.Component<Props, State> {
   }
 
   public getImageColours = () => {
-    ImagePicker.launchImageLibrary({}, (response)  => {
+    ImagePicker.showImagePicker({}, (response)  => {
       const path =  Platform.OS === "ios" ? response.origURL : response.path;
       const imageLocation = response.uri;
       this.setState({imageLocation, searchText: imageLocation});
@@ -89,6 +89,7 @@ export default class ColorSearch extends React.Component<Props, State> {
             placeholder="Search for colour"
             onChangeText={this.onUpdateInput}
             value={this.state.searchText}
+            underlineColorAndroid={"transparent"}
           />
           <Icon
             style={[styles.icon, styles.searchIcon]}
