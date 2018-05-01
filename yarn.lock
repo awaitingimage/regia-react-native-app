@@ -6248,6 +6248,10 @@ nearest-color@^0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/nearest-color/-/nearest-color-0.4.2.tgz#6ebd3a859969e76dd834e609beeecef73c3881e0"
 
+nearest-colors@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/nearest-colors/-/nearest-colors-1.0.0.tgz#bf6e40c737263cf564692355b6c68dbeb9a0d9c7"
+
 negotiator@0.5.3:
   version "0.5.3"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.5.3.tgz#269d5c476810ec92edbe7b6c2f28316384f9a7e8"

@@ -1,18 +1,15 @@
 import moment from "moment";
 import * as React from "react";
-import { Image, Linking, Platform, ScrollView, Switch, Text, View } from "react-native";
-import { Button, SearchBar } from "react-native-elements";
+import { Image, Linking, ScrollView, Switch, Text, View } from "react-native";
 import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
-import ImagePicker from "react-native-image-picker";
-import {getAllSwatches} from "react-native-palette";
 import { NavigationScreenProps } from "react-navigation";
 import { connect } from "react-redux";
 import Checkbox from "../../Components/Checkbox";
 import ColorCollapsible from "../../Components/ColorCollapsible";
+import ColorSearch from "../../Components/ColorSearch";
 import NavBar from "../../Components/NavBar";
 import PrivateConfig from "../../Config/PrivateConfig";
 import { Color } from "../../Lib/Colors";
-import { nearestFrom, rgbaToHex } from "../../Lib/nearestColor1";
 import { RootState } from "../../Reducers";
 import {ColorActions} from "../../Reducers/ColorReducers";
 import { StartUpActions } from "../../Reducers/StartupReducers";
@@ -48,9 +45,8 @@ export interface StateProps {
  */
 export interface State {
   color: Color | null;
-  searchText: string;
-  imageLocation: string;
-  mainColour: string;
+  colors: Color[];
+  searchText: string[];
   nearestColour: string;
 }
 
@@ -61,43 +57,11 @@ class ColorScreen extends React.Component<Props, State> {
   public constructor(props: Props) {
     super(props);
     this.state = {
-      searchText: "",
+      searchText: [],
+      colors: this.props.colors,
       color: null,
-      imageLocation: "",
-      mainColour: "rgba(0,0,0,0)",
       nearestColour: "#ffffff",
     };
-  }
-
-  public getImageColours = () => {
-    ImagePicker.launchImageLibrary({}, (response)  => {
-      const path =  Platform.OS === "ios" ? response.origURL : response.path;
-      const imageLocation = response.uri;
-      this.setState({imageLocation});
-      getAllSwatches({}, path, (error, swatches) => {
-        if (error) {
-          console.log(error);
-        } else {
-          swatches.sort((a, b) => {
-            return b.population - a.population;
-          });
-
-          const colors = {
-            red: "#F7EB34",
-            yellow: "#F7EB34",
-            blue: "#F7EB34",
-          };
-
-          const nearestColor2 = nearestFrom(this.props.colors);
-
-          this.setState({mainColour: rgbaToHex(swatches[0].color), searchText: nearestColor2(rgbaToHex(swatches[0].color)).name});
-
-          swatches.forEach((swatch) => {
-            console.log(swatch);
-          });
-        }
-      });
-    });
   }
 
   public componentWillMount() {
@@ -112,9 +76,12 @@ class ColorScreen extends React.Component<Props, State> {
     this.setState({color});
   }
 
+  public onSearchChange = (searchText: string[]) => {
+    this.setState({searchText});
+  }
+
   public render() {
 
-    // Get list of colours based on search box match against any colour property
     const colors = this.props.colors.filter((colour) => {
       // Convert object props to array list with all uppercase
       const upperCaseNames = Object.values(colour).map((value) => {
@@ -122,11 +89,14 @@ class ColorScreen extends React.Component<Props, State> {
       });
 
       // check array to see if any string has a partial match for the search text
-      const partialMatch = upperCaseNames.find((elem) => {
-        return elem.indexOf(this.state.searchText.toUpperCase()) > -1;
+      const partialMatch = upperCaseNames.find((elem1) => {
+        const x = this.state.searchText.find((elem2) => {
+          return elem1.indexOf(elem2.toUpperCase()) > -1;
+        });
+        return typeof x !== "undefined";
       });
 
-      return (this.state.searchText === "" || partialMatch);
+      return (this.state.searchText.length === 0 || partialMatch);
     });
 
     return (
@@ -136,28 +106,7 @@ class ColorScreen extends React.Component<Props, State> {
           onBurgerPress={() => this.props.navigation.navigate("DrawerOpen")}
         />
 
-        <SearchBar
-          value={this.state.searchText}
-          onChangeText={(searchText) => this.setState({searchText})}
-          onClearText={() => this.setState({searchText: ""})}
-          placeholder="Search for colour"
-          clearIcon={true}
-          lightTheme
-          round
-          // containerStyle={{backgroundColor: projectColours.primaryOrange}}
-        />
-
-        <Button
-          onPress={this.getImageColours}
-          iconRight={{name: "code"}}
-          title="Take picture"
-        />
-
-        <Image
-          style={{width: 50, height: 50}}
-          source={{uri: this.state.imageLocation}}
-        />
-        <Text style={{backgroundColor: this.state.mainColour}}>{this.state.mainColour}</Text>
+        <ColorSearch onChange={this.onSearchChange} colors={this.props.colors}/>
 
         <ColorCollapsible color={this.state.color} isCollapsed={this.props.isCollapsed}/>
 

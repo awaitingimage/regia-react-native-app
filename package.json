@@ -33,6 +33,7 @@
     "lodash": "^4.17.2",
     "moment": "^2.20.1",
     "nearest-color": "^0.4.2",
+    "nearest-colors": "^1.0.0",
     "npm": "^5.7.1",
     "prop-types": "15.6.0",
     "querystringify": "0.0.4",
