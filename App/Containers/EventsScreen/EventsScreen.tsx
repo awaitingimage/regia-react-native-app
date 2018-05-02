@@ -1,5 +1,6 @@
 import * as React from "react";
 import { View } from "react-native";
+import Config from "react-native-config";
 import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
 import { NavigationScreenProps } from "react-navigation";
 import { connect } from "react-redux";
@@ -8,7 +9,6 @@ import EventDetails from "../../Components/EventDetails";
 import FilterTabs from "../../Components/FilterTabs";
 import ListItem from "../../Components/ListItem";
 import NavBar from "../../Components/NavBar";
-import PrivateConfig from "../../Config/PrivateConfig";
 import { Event } from "../../Lib/Events" ;
 import { RootState } from "../../Reducers";
 import { EventActions } from "../../Reducers/EventReducers";
@@ -59,7 +59,7 @@ class EventsScreen extends React.Component<Props, State> {
   }
 
   public componentWillMount() {
-    const tracker = new GoogleAnalyticsTracker(PrivateConfig.gaTrackingNumber);
+    const tracker = new GoogleAnalyticsTracker(Config.GA_TRACKING_NUMBER);
     tracker.trackScreenView("Events");
   }
 

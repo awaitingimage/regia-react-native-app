@@ -2,8 +2,8 @@ import moment from "moment";
 import * as React from "react";
 import { Text, View } from "react-native";
 import * as AddCalendarEvent from "react-native-add-calendar-event";
+import Config from "react-native-config";
 import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
-import PrivateConfig from "../../Config/PrivateConfig";
 import { Event } from "../../Lib/Events";
 import EventLocation from "../EventLocation";
 import PrimaryButton from "../PrimaryButton";
@@ -17,7 +17,7 @@ interface Props {
 }
 
 const EventDetails: React.SFC<Props> = ({ event }: Props) => {
-  const tracker = new GoogleAnalyticsTracker(PrivateConfig.gaTrackingNumber);
+  const tracker = new GoogleAnalyticsTracker(Config.GA_TRACKING_NUMBER);
   const address1 = event.address1 ? event.address1 + ", " : "";
   const address2 = event.address2 ? event.address2 + ", " : "";
   const postcode = event.postcode ? event.postcode + ", " : "";
@@ -50,7 +50,7 @@ const EventDetails: React.SFC<Props> = ({ event }: Props) => {
       <PrimaryButton style={{alignSelf: "flex-start"}} text={"Add to calendar"} iconString={"calendar"}
           onPress={() =>  AddCalendarEvent.presentNewCalendarEventDialog(eventConfig)
             .then((eventId) => {
-              //handle success (receives event id) or dismissing the modal (receives false)
+              // handle success (receives event id) or dismissing the modal (receives false)
               if (eventId) {
                 tracker.trackEvent("CalendarCategory", "AddToCalendarSuccess");
               } else {

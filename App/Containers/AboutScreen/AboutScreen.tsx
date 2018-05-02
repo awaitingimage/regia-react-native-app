@@ -1,12 +1,12 @@
 import moment from "moment";
 import * as React from "react";
 import { Image, Linking, ScrollView, Switch, Text, View } from "react-native";
+import Config from "react-native-config";
 import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
 import { NavigationScreenProps } from "react-navigation";
 import { connect } from "react-redux";
 import Checkbox from "../../Components/Checkbox";
 import NavBar from "../../Components/NavBar";
-import PrivateConfig from "../../Config/PrivateConfig";
 import { RootState } from "../../Reducers";
 import { StartUpActions } from "../../Reducers/StartupReducers";
 import { Images } from "../../Themes";
@@ -43,7 +43,7 @@ type Props = StateProps & DispatchProps & OwnProps & NavigationScreenProps<{}>;
 class AboutScreen extends React.Component<Props, State> {
 
   public componentWillMount() {
-    const tracker = new GoogleAnalyticsTracker(PrivateConfig.gaTrackingNumber);
+    const tracker = new GoogleAnalyticsTracker(Config.GA_TRACKING_NUMBER);
     tracker.trackScreenView("About");
   }
 

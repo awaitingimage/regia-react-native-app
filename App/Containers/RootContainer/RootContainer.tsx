@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Platform, StatusBar, View } from "react-native";
+import Config from "react-native-config";
 import { GoogleAnalyticsSettings } from "react-native-google-analytics-bridge";
 import HockeyApp from "react-native-hockeyapp";
 import { connect } from "react-redux";
-import PrivateConfig from "../../Config/PrivateConfig";
 import ReduxPersist from "../../Config/ReduxPersist";
 import ReduxNavigation from "../../Navigation/ReduxNavigation";
 import { RootState } from "../../Reducers";
@@ -33,10 +33,10 @@ type Props = StateProps & DispatchProps & OwnProps;
 export class RootContainer extends React.Component<Props, State> {
   public componentWillMount() {
     if (Platform.OS === "android") {
-      HockeyApp.configure(PrivateConfig.hockeyAppIdAndroid, true);
+      HockeyApp.configure(Config.HOCKEYAPP_ID_ANDROID, true);
     }
     if (Platform.OS === "ios") {
-      HockeyApp.configure(PrivateConfig.hockeyAppIdIOS, true);
+      HockeyApp.configure(Config.HOCKEYAPP_ID_IOS, true);
     }
 
     /* Set opt out to true initially. Rehydrate will then set this correctly.

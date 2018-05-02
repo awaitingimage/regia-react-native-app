@@ -1,11 +1,11 @@
 import moment from "moment";
 import * as React from "react";
 import { Image, Linking, ScrollView, Text, View } from "react-native";
+import Config from "react-native-config";
 import { GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
 import { NavigationScreenProps } from "react-navigation";
 import { connect } from "react-redux";
 import NavBar from "../../Components/NavBar";
-import PrivateConfig from "../../Config/PrivateConfig";
 import { Images } from "../../Themes";
 import Metrics from "../../Themes/Metrics";
 import styles from "./Style";
@@ -38,7 +38,7 @@ type Props = StateProps & DispatchProps & OwnProps & NavigationScreenProps<{}>;
 class ContactScreen extends React.Component<Props, State> {
 
   public componentWillMount() {
-    const tracker = new GoogleAnalyticsTracker(PrivateConfig.gaTrackingNumber);
+    const tracker = new GoogleAnalyticsTracker(Config.GA_TRACKING_NUMBER);
     tracker.trackScreenView("Contact");
   }
 

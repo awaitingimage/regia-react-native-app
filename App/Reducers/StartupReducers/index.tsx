@@ -1,8 +1,8 @@
+import Config from "react-native-config";
 import { GoogleAnalyticsSettings, GoogleAnalyticsTracker } from "react-native-google-analytics-bridge";
 import { Action, AnyAction, Reducer } from "redux";
 import * as SI from "seamless-immutable";
 import { createAction, PayloadAction } from "ts-redux-actions";
-import PrivateConfig from "../../Config/PrivateConfig";
 import { mapReducers, ReducerMap } from "../../Lib/ReduxHelpers";
 
 /* ------------- Types and Action Creators ------------- */
@@ -42,7 +42,7 @@ export const rehydrate: Reducer<ImmutableStartUpState> =
 
 export const setTracker: Reducer<ImmutableStartUpState> =
   (state: ImmutableStartUpState) =>
-  state.merge({ gaTracker:  new GoogleAnalyticsTracker(PrivateConfig.gaTrackingNumber) });
+  state.merge({ gaTracker:  new GoogleAnalyticsTracker(Config.GA_TRACKING_NUMBER) });
 
 export const setGAOptOut: Reducer<ImmutableStartUpState> =
   (state: ImmutableStartUpState, { payload }: any) => {

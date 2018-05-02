@@ -55,7 +55,7 @@ buck-out/
 # Misc
 #
 .env.example
-.env
+*.env
 dist
 .jest
 
